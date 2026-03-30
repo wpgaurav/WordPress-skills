@@ -199,13 +199,13 @@ Copy the content of any `SKILL.md` file into your AI tool's system prompt, custo
 
 ```bash
 # Clone the repository
-git clone https://github.com/user/ai-agent-skills.git
+git clone https://github.com/wpgaurav/WordPress-skills.git
 
 # For Claude Code — symlink skills to your config
-ln -s $(pwd)/ai-agent-skills/skills ~/.claude/skills
+ln -s $(pwd)/WordPress-skills/skills ~/.claude/skills
 
 # Or copy individual skills
-cp -r ai-agent-skills/skills/wordpress/wp-block ~/.claude/skills/
+cp -r WordPress-skills/skills/wordpress/wp-block ~/.claude/skills/
 ```
 
 ## Contributing
@@ -226,6 +226,15 @@ If you maintain skills locally and want to sync them to this repo:
 # Verify no personal data leaked
 ./scripts/check-personal-data.sh
 ```
+
+## Author
+
+**Gaurav Tiwari** — WordPress developer, designer, and AI tools builder.
+
+- [gauravtiwari.org](https://gauravtiwari.org)
+- [GitHub (@wpgaurav)](https://github.com/wpgaurav)
+- [X (@wpgaurav)](https://x.com/wpgaurav)
+- [LinkedIn](https://linkedin.com/in/wpgaurav)
 
 ## License
 
