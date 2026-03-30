@@ -1,0 +1,29 @@
+# Personal data - NEVER commit these
+**/references/
+**/references/**
+**/llm.md
+**/about-me.md
+**/business-profile.md
+**/voice-dna.md
+**/affiliate-products.md
+**/gt-link-manager-affiliates.md
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Node
+node_modules/
+
+# Env and secrets
+.env
+.env.*
+*.key
+*.pem
