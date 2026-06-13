@@ -1,0 +1,200 @@
+{
+  "content": [
+    {
+      "id": "fqsec1",
+      "name": "section",
+      "parent": 0,
+      "children": ["fqcon1"],
+      "label": "FAQ",
+      "settings": {
+        "tag": "section",
+        "_padding": { "top": "clamp(4rem, 8vw, 7rem)", "bottom": "clamp(4rem, 8vw, 7rem)" },
+        "_background": { "color": { "hex": "#f8fafc" } }
+      }
+    },
+    {
+      "id": "fqcon1",
+      "name": "container",
+      "parent": "fqsec1",
+      "children": ["fqttl1", "fqacc1"],
+      "settings": { "_rowGap": "48px", "_widthMax": "820px" }
+    },
+    {
+      "id": "fqttl1",
+      "name": "heading",
+      "parent": "fqcon1",
+      "children": [],
+      "settings": {
+        "text": "Frequently asked questions",
+        "tag": "h2",
+        "_typography": { "text-align": "center", "font-size": "clamp(1.875rem, 4vw, 2.5rem)", "font-weight": "700" }
+      }
+    },
+    {
+      "id": "fqacc1",
+      "name": "accordion-nested",
+      "parent": "fqcon1",
+      "children": ["fqit01", "fqit02"],
+      "label": "FAQ Accordion",
+      "settings": {
+        "faqSchema": true,
+        "expandFirstItem": true,
+        "titlePadding": { "top": "20px", "right": "24px", "bottom": "20px", "left": "24px" },
+        "contentPadding": { "top": "0", "right": "24px", "bottom": "24px", "left": "24px" }
+      }
+    },
+    {
+      "id": "fqit01",
+      "name": "block",
+      "parent": "fqacc1",
+      "children": ["fqtw01", "fqcw01"],
+      "label": "Item",
+      "settings": {
+        "_background": { "color": { "hex": "#ffffff" } },
+        "_border": {
+          "width": { "top": "1px", "right": "1px", "bottom": "1px", "left": "1px" },
+          "style": "solid",
+          "color": { "rgb": "rgba(15, 23, 42, 0.08)" },
+          "radius": { "top": "12px", "right": "12px", "bottom": "12px", "left": "12px" }
+        },
+        "_margin": { "bottom": "12px" },
+        "_overflow": "hidden"
+      }
+    },
+    {
+      "id": "fqtw01",
+      "name": "block",
+      "parent": "fqit01",
+      "children": ["fqhd01", "fqic01"],
+      "label": "Title",
+      "settings": {
+        "_alignItems": "center",
+        "_direction": "row",
+        "_justifyContent": "space-between",
+        "_cursor": "pointer",
+        "_hidden": { "_cssClasses": "accordion-title-wrapper" }
+      }
+    },
+    {
+      "id": "fqhd01",
+      "name": "heading",
+      "parent": "fqtw01",
+      "children": [],
+      "settings": {
+        "text": "Do I need to know how to code?",
+        "tag": "h3",
+        "_typography": { "font-size": "1.0625rem", "font-weight": "600" }
+      }
+    },
+    {
+      "id": "fqic01",
+      "name": "icon",
+      "parent": "fqtw01",
+      "children": [],
+      "settings": {
+        "icon": { "library": "ionicons", "icon": "ion-ios-arrow-forward" },
+        "iconSize": "1em",
+        "isAccordionIcon": true
+      }
+    },
+    {
+      "id": "fqcw01",
+      "name": "block",
+      "parent": "fqit01",
+      "children": ["fqtx01"],
+      "label": "Content",
+      "settings": {
+        "_hidden": { "_cssClasses": "accordion-content-wrapper" }
+      }
+    },
+    {
+      "id": "fqtx01",
+      "name": "text",
+      "parent": "fqcw01",
+      "children": [],
+      "settings": {
+        "text": "<p>No. Everything is visual — but when you want to drop into CSS or PHP, the builder gives you clean, documented escape hatches.</p>",
+        "_typography": { "color": { "hex": "#64748b" }, "line-height": "1.65" }
+      }
+    },
+    {
+      "id": "fqit02",
+      "name": "block",
+      "parent": "fqacc1",
+      "children": ["fqtw02", "fqcw02"],
+      "label": "Item",
+      "settings": {
+        "_background": { "color": { "hex": "#ffffff" } },
+        "_border": {
+          "width": { "top": "1px", "right": "1px", "bottom": "1px", "left": "1px" },
+          "style": "solid",
+          "color": { "rgb": "rgba(15, 23, 42, 0.08)" },
+          "radius": { "top": "12px", "right": "12px", "bottom": "12px", "left": "12px" }
+        },
+        "_margin": { "bottom": "12px" },
+        "_overflow": "hidden"
+      }
+    },
+    {
+      "id": "fqtw02",
+      "name": "block",
+      "parent": "fqit02",
+      "children": ["fqhd02", "fqic02"],
+      "label": "Title",
+      "settings": {
+        "_alignItems": "center",
+        "_direction": "row",
+        "_justifyContent": "space-between",
+        "_cursor": "pointer",
+        "_hidden": { "_cssClasses": "accordion-title-wrapper" }
+      }
+    },
+    {
+      "id": "fqhd02",
+      "name": "heading",
+      "parent": "fqtw02",
+      "children": [],
+      "settings": {
+        "text": "Can I cancel my subscription anytime?",
+        "tag": "h3",
+        "_typography": { "font-size": "1.0625rem", "font-weight": "600" }
+      }
+    },
+    {
+      "id": "fqic02",
+      "name": "icon",
+      "parent": "fqtw02",
+      "children": [],
+      "settings": {
+        "icon": { "library": "ionicons", "icon": "ion-ios-arrow-forward" },
+        "iconSize": "1em",
+        "isAccordionIcon": true
+      }
+    },
+    {
+      "id": "fqcw02",
+      "name": "block",
+      "parent": "fqit02",
+      "children": ["fqtx02"],
+      "label": "Content",
+      "settings": {
+        "_hidden": { "_cssClasses": "accordion-content-wrapper" }
+      }
+    },
+    {
+      "id": "fqtx02",
+      "name": "text",
+      "parent": "fqcw02",
+      "children": [],
+      "settings": {
+        "text": "<p>Yes — cancel from your account dashboard at any time. Your site keeps working; you just stop receiving updates and support.</p>",
+        "_typography": { "color": { "hex": "#64748b" }, "line-height": "1.65" }
+      }
+    }
+  ],
+  "source": "bricksCopiedElements",
+  "sourceUrl": "https://github.com/wpgaurav/bricks-skills",
+  "version": "2.3.6",
+  "globalClasses": [],
+  "globalElements": []
+}

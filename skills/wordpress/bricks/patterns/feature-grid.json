@@ -1,0 +1,267 @@
+{
+  "content": [
+    {
+      "id": "ftsec1",
+      "name": "section",
+      "parent": 0,
+      "children": ["ftcon1"],
+      "label": "Features",
+      "settings": {
+        "tag": "section",
+        "_padding": { "top": "clamp(4rem, 8vw, 7rem)", "bottom": "clamp(4rem, 8vw, 7rem)" }
+      }
+    },
+    {
+      "id": "ftcon1",
+      "name": "container",
+      "parent": "ftsec1",
+      "children": ["fthdr1", "ftgrd1"],
+      "settings": { "_rowGap": "56px" }
+    },
+    {
+      "id": "fthdr1",
+      "name": "block",
+      "parent": "ftcon1",
+      "children": ["fteyb1", "ftttl1", "ftsub1"],
+      "label": "Section Header",
+      "settings": {
+        "_rowGap": "12px",
+        "_alignItems": "center",
+        "_widthMax": "640px",
+        "_margin": { "left": "auto", "right": "auto" }
+      }
+    },
+    {
+      "id": "fteyb1",
+      "name": "text-basic",
+      "parent": "fthdr1",
+      "children": [],
+      "label": "Eyebrow",
+      "settings": {
+        "text": "FEATURES",
+        "tag": "span",
+        "_typography": {
+          "font-size": "0.8125rem",
+          "font-weight": "600",
+          "letter-spacing": "0.1em",
+          "text-transform": "uppercase",
+          "color": { "hex": "#2563eb" },
+          "text-align": "center"
+        }
+      }
+    },
+    {
+      "id": "ftttl1",
+      "name": "heading",
+      "parent": "fthdr1",
+      "children": [],
+      "settings": {
+        "text": "Everything you need to launch",
+        "tag": "h2",
+        "_typography": { "text-align": "center", "font-size": "clamp(1.875rem, 4vw, 2.5rem)", "font-weight": "700", "line-height": "1.15" }
+      }
+    },
+    {
+      "id": "ftsub1",
+      "name": "text-basic",
+      "parent": "fthdr1",
+      "children": [],
+      "settings": {
+        "text": "Powerful building blocks that work together, so you can focus on the parts that make your site unique.",
+        "tag": "p",
+        "_typography": { "text-align": "center", "color": { "hex": "#64748b" }, "line-height": "1.6" }
+      }
+    },
+    {
+      "id": "ftgrd1",
+      "name": "div",
+      "parent": "ftcon1",
+      "children": ["ftcd01", "ftcd02", "ftcd03"],
+      "label": "Feature Grid",
+      "settings": {
+        "_display": "grid",
+        "_gridTemplateColumns": "repeat(3, minmax(0, 1fr))",
+        "_gridGap": "32px",
+        "_gridTemplateColumns:tablet_portrait": "repeat(2, minmax(0, 1fr))",
+        "_gridTemplateColumns:mobile_portrait": "1fr"
+      }
+    },
+    {
+      "id": "ftcd01",
+      "name": "block",
+      "parent": "ftgrd1",
+      "children": ["fti001", "fth001", "ftt001"],
+      "label": "Feature Card",
+      "settings": {
+        "_cssGlobalClasses": ["ftcard"],
+        "_interactions": [
+          { "id": "ftrv01", "trigger": "enterView", "action": "startAnimation", "animationType": "fadeInUp", "animationDuration": "0.5s", "target": "self", "runOnce": true }
+        ]
+      }
+    },
+    {
+      "id": "fti001",
+      "name": "icon",
+      "parent": "ftcd01",
+      "children": [],
+      "settings": {
+        "icon": { "library": "themify", "icon": "ti-bolt" },
+        "iconSize": "24px",
+        "iconColor": { "hex": "#2563eb" },
+        "_cssGlobalClasses": ["fticon"]
+      }
+    },
+    {
+      "id": "fth001",
+      "name": "heading",
+      "parent": "ftcd01",
+      "children": [],
+      "settings": {
+        "text": "Instant publishing",
+        "tag": "h3",
+        "_typography": { "font-size": "1.25rem", "font-weight": "600" }
+      }
+    },
+    {
+      "id": "ftt001",
+      "name": "text-basic",
+      "parent": "ftcd01",
+      "children": [],
+      "settings": {
+        "text": "Push changes live in one click with automatic asset regeneration and cache busting.",
+        "tag": "p",
+        "_typography": { "color": { "hex": "#64748b" }, "line-height": "1.6" }
+      }
+    },
+    {
+      "id": "ftcd02",
+      "name": "block",
+      "parent": "ftgrd1",
+      "children": ["fti002", "fth002", "ftt002"],
+      "label": "Feature Card",
+      "settings": {
+        "_cssGlobalClasses": ["ftcard"],
+        "_interactions": [
+          { "id": "ftrv02", "trigger": "enterView", "action": "startAnimation", "animationType": "fadeInUp", "animationDuration": "0.5s", "animationDelay": "0.1s", "target": "self", "runOnce": true }
+        ]
+      }
+    },
+    {
+      "id": "fti002",
+      "name": "icon",
+      "parent": "ftcd02",
+      "children": [],
+      "settings": {
+        "icon": { "library": "themify", "icon": "ti-layout-grid2" },
+        "iconSize": "24px",
+        "iconColor": { "hex": "#2563eb" },
+        "_cssGlobalClasses": ["fticon"]
+      }
+    },
+    {
+      "id": "fth002",
+      "name": "heading",
+      "parent": "ftcd02",
+      "children": [],
+      "settings": {
+        "text": "Flexible layouts",
+        "tag": "h3",
+        "_typography": { "font-size": "1.25rem", "font-weight": "600" }
+      }
+    },
+    {
+      "id": "ftt002",
+      "name": "text-basic",
+      "parent": "ftcd02",
+      "children": [],
+      "settings": {
+        "text": "Real CSS grid and flexbox controls with per-breakpoint overrides — no rigid column systems.",
+        "tag": "p",
+        "_typography": { "color": { "hex": "#64748b" }, "line-height": "1.6" }
+      }
+    },
+    {
+      "id": "ftcd03",
+      "name": "block",
+      "parent": "ftgrd1",
+      "children": ["fti003", "fth003", "ftt003"],
+      "label": "Feature Card",
+      "settings": {
+        "_cssGlobalClasses": ["ftcard"],
+        "_interactions": [
+          { "id": "ftrv03", "trigger": "enterView", "action": "startAnimation", "animationType": "fadeInUp", "animationDuration": "0.5s", "animationDelay": "0.2s", "target": "self", "runOnce": true }
+        ]
+      }
+    },
+    {
+      "id": "fti003",
+      "name": "icon",
+      "parent": "ftcd03",
+      "children": [],
+      "settings": {
+        "icon": { "library": "themify", "icon": "ti-shield" },
+        "iconSize": "24px",
+        "iconColor": { "hex": "#2563eb" },
+        "_cssGlobalClasses": ["fticon"]
+      }
+    },
+    {
+      "id": "fth003",
+      "name": "heading",
+      "parent": "ftcd03",
+      "children": [],
+      "settings": {
+        "text": "Secure by default",
+        "tag": "h3",
+        "_typography": { "font-size": "1.25rem", "font-weight": "600" }
+      }
+    },
+    {
+      "id": "ftt003",
+      "name": "text-basic",
+      "parent": "ftcd03",
+      "children": [],
+      "settings": {
+        "text": "Sanitized output, capability-gated code execution, and battle-tested form handling.",
+        "tag": "p",
+        "_typography": { "color": { "hex": "#64748b" }, "line-height": "1.6" }
+      }
+    }
+  ],
+  "source": "bricksCopiedElements",
+  "sourceUrl": "https://github.com/wpgaurav/bricks-skills",
+  "version": "2.3.6",
+  "globalClasses": [
+    {
+      "id": "ftcard",
+      "name": "feature-card",
+      "settings": {
+        "_background": { "color": { "hex": "#ffffff" } },
+        "_border": {
+          "width": { "top": "1px", "right": "1px", "bottom": "1px", "left": "1px" },
+          "style": "solid",
+          "color": { "rgb": "rgba(15, 23, 42, 0.08)" },
+          "radius": { "top": "16px", "right": "16px", "bottom": "16px", "left": "16px" }
+        },
+        "_padding": { "top": "32px", "right": "32px", "bottom": "32px", "left": "32px" },
+        "_rowGap": "16px",
+        "_cssTransition": "transform 0.25s ease, box-shadow 0.25s ease",
+        "_transform:hover": { "translateY": "-4" },
+        "_boxShadow:hover": {
+          "values": { "offsetX": "0", "offsetY": "12", "blur": "32", "spread": "-8" },
+          "color": { "rgb": "rgba(15, 23, 42, 0.18)" }
+        }
+      }
+    },
+    {
+      "id": "fticon",
+      "name": "feature-icon",
+      "settings": {
+        "_background": { "color": { "rgb": "rgba(37, 99, 235, 0.1)" } },
+        "_padding": { "top": "12px", "right": "12px", "bottom": "12px", "left": "12px" },
+        "_border": { "radius": { "top": "12px", "right": "12px", "bottom": "12px", "left": "12px" } }
+      }
+    }
+  ],
+  "globalElements": []
+}

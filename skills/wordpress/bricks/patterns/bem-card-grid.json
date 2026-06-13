@@ -1,0 +1,646 @@
+{
+  "content": [
+    {
+      "id": "bcsec1",
+      "name": "section",
+      "parent": 0,
+      "children": [
+        "bccon1"
+      ],
+      "label": "Cards (BEM)",
+      "settings": {
+        "tag": "section",
+        "_cssGlobalClasses": [
+          "bmcsec"
+        ]
+      }
+    },
+    {
+      "id": "bccon1",
+      "name": "container",
+      "parent": "bcsec1",
+      "children": [
+        "bchdr1",
+        "bcgrd1"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "bmcinn"
+        ]
+      },
+      "label": "cards__inner"
+    },
+    {
+      "id": "bchdr1",
+      "name": "block",
+      "parent": "bccon1",
+      "children": [
+        "bcttl1",
+        "bcsub1"
+      ],
+      "label": "cards__header",
+      "settings": {
+        "_cssGlobalClasses": [
+          "bmchdr"
+        ]
+      }
+    },
+    {
+      "id": "bcttl1",
+      "name": "heading",
+      "parent": "bchdr1",
+      "children": [],
+      "label": "cards__title",
+      "settings": {
+        "text": "One card block, one modifier",
+        "tag": "h2",
+        "_cssGlobalClasses": [
+          "bmcttl"
+        ]
+      }
+    },
+    {
+      "id": "bcsub1",
+      "name": "text-basic",
+      "parent": "bchdr1",
+      "children": [],
+      "label": "cards__subtitle",
+      "settings": {
+        "text": "The middle card applies card--featured on top of the card base class — that's the whole difference.",
+        "tag": "p",
+        "_cssGlobalClasses": [
+          "bmcsub"
+        ]
+      }
+    },
+    {
+      "id": "bcgrd1",
+      "name": "div",
+      "parent": "bccon1",
+      "children": [
+        "bccd01",
+        "bccd02",
+        "bccd03"
+      ],
+      "label": "cards__grid",
+      "settings": {
+        "_cssGlobalClasses": [
+          "bmcgrd"
+        ]
+      }
+    },
+    {
+      "id": "bccd01",
+      "name": "block",
+      "parent": "bcgrd1",
+      "children": [
+        "bcic01",
+        "bcht01",
+        "bctx01",
+        "bclk01"
+      ],
+      "label": "card",
+      "settings": {
+        "_cssGlobalClasses": [
+          "bmcard"
+        ]
+      }
+    },
+    {
+      "id": "bcic01",
+      "name": "icon",
+      "parent": "bccd01",
+      "children": [],
+      "label": "card__icon",
+      "settings": {
+        "icon": {
+          "library": "themify",
+          "icon": "ti-ruler-pencil"
+        },
+        "iconSize": "22px",
+        "_cssGlobalClasses": [
+          "bmcico"
+        ]
+      }
+    },
+    {
+      "id": "bcht01",
+      "name": "heading",
+      "parent": "bccd01",
+      "children": [],
+      "label": "card__title",
+      "settings": {
+        "text": "Design tokens",
+        "tag": "h3",
+        "_cssGlobalClasses": [
+          "bmcdtl"
+        ]
+      }
+    },
+    {
+      "id": "bctx01",
+      "name": "text-basic",
+      "parent": "bccd01",
+      "children": [],
+      "label": "card__text",
+      "settings": {
+        "text": "Spacing, radius, and color choices live in classes, so changing the system changes every card.",
+        "tag": "p",
+        "_cssGlobalClasses": [
+          "bmcdtx"
+        ]
+      }
+    },
+    {
+      "id": "bclk01",
+      "name": "text-link",
+      "parent": "bccd01",
+      "children": [],
+      "label": "card__link",
+      "settings": {
+        "text": "Learn more →",
+        "link": {
+          "type": "external",
+          "url": "#tokens"
+        },
+        "_cssGlobalClasses": [
+          "bmclnk"
+        ]
+      }
+    },
+    {
+      "id": "bccd02",
+      "name": "block",
+      "parent": "bcgrd1",
+      "children": [
+        "bcbg02",
+        "bcic02",
+        "bcht02",
+        "bctx02",
+        "bclk02"
+      ],
+      "label": "card card--featured",
+      "settings": {
+        "_cssGlobalClasses": [
+          "bmcard",
+          "bmcftd"
+        ]
+      }
+    },
+    {
+      "id": "bcbg02",
+      "name": "text-basic",
+      "parent": "bccd02",
+      "children": [],
+      "label": "card__badge",
+      "settings": {
+        "text": "FEATURED",
+        "tag": "span",
+        "_cssGlobalClasses": [
+          "bmcbdg"
+        ]
+      }
+    },
+    {
+      "id": "bcic02",
+      "name": "icon",
+      "parent": "bccd02",
+      "children": [],
+      "label": "card__icon",
+      "settings": {
+        "icon": {
+          "library": "themify",
+          "icon": "ti-bolt"
+        },
+        "iconSize": "22px",
+        "_cssGlobalClasses": [
+          "bmcico"
+        ]
+      }
+    },
+    {
+      "id": "bcht02",
+      "name": "heading",
+      "parent": "bccd02",
+      "children": [],
+      "label": "card__title",
+      "settings": {
+        "text": "Modifier classes",
+        "tag": "h3",
+        "_cssGlobalClasses": [
+          "bmcdtl"
+        ]
+      }
+    },
+    {
+      "id": "bctx02",
+      "name": "text-basic",
+      "parent": "bccd02",
+      "children": [],
+      "label": "card__text",
+      "settings": {
+        "text": "This card stacks card--featured after card. Inverted colors, lifted shadow — zero inline settings.",
+        "tag": "p",
+        "_cssGlobalClasses": [
+          "bmcdtx"
+        ]
+      }
+    },
+    {
+      "id": "bclk02",
+      "name": "text-link",
+      "parent": "bccd02",
+      "children": [],
+      "label": "card__link",
+      "settings": {
+        "text": "Learn more →",
+        "link": {
+          "type": "external",
+          "url": "#modifiers"
+        },
+        "_cssGlobalClasses": [
+          "bmclnk",
+          "bmclkf"
+        ]
+      }
+    },
+    {
+      "id": "bccd03",
+      "name": "block",
+      "parent": "bcgrd1",
+      "children": [
+        "bcic03",
+        "bcht03",
+        "bctx03",
+        "bclk03"
+      ],
+      "label": "card",
+      "settings": {
+        "_cssGlobalClasses": [
+          "bmcard"
+        ]
+      }
+    },
+    {
+      "id": "bcic03",
+      "name": "icon",
+      "parent": "bccd03",
+      "children": [],
+      "label": "card__icon",
+      "settings": {
+        "icon": {
+          "library": "themify",
+          "icon": "ti-reload"
+        },
+        "iconSize": "22px",
+        "_cssGlobalClasses": [
+          "bmcico"
+        ]
+      }
+    },
+    {
+      "id": "bcht03",
+      "name": "heading",
+      "parent": "bccd03",
+      "children": [],
+      "label": "card__title",
+      "settings": {
+        "text": "Reusable everywhere",
+        "tag": "h3",
+        "_cssGlobalClasses": [
+          "bmcdtl"
+        ]
+      }
+    },
+    {
+      "id": "bctx03",
+      "name": "text-basic",
+      "parent": "bccd03",
+      "children": [],
+      "label": "card__text",
+      "settings": {
+        "text": "Paste this section twice — Bricks dedupes the classes by name, so styles stay in sync site-wide.",
+        "tag": "p",
+        "_cssGlobalClasses": [
+          "bmcdtx"
+        ]
+      }
+    },
+    {
+      "id": "bclk03",
+      "name": "text-link",
+      "parent": "bccd03",
+      "children": [],
+      "label": "card__link",
+      "settings": {
+        "text": "Learn more →",
+        "link": {
+          "type": "external",
+          "url": "#reuse"
+        },
+        "_cssGlobalClasses": [
+          "bmclnk"
+        ]
+      }
+    }
+  ],
+  "source": "bricksCopiedElements",
+  "sourceUrl": "https://github.com/wpgaurav/bricks-skills",
+  "version": "2.3.6",
+  "globalClasses": [
+    {
+      "id": "bmcsec",
+      "name": "cards",
+      "settings": {
+        "_padding": {
+          "top": "clamp(4rem, 8vw, 7rem)",
+          "bottom": "clamp(4rem, 8vw, 7rem)"
+        },
+        "_background": {
+          "color": {
+            "hex": "#f8fafc"
+          }
+        }
+      }
+    },
+    {
+      "id": "bmcinn",
+      "name": "cards__inner",
+      "settings": {
+        "_rowGap": "56px"
+      }
+    },
+    {
+      "id": "bmchdr",
+      "name": "cards__header",
+      "settings": {
+        "_rowGap": "12px",
+        "_alignItems": "center",
+        "_widthMax": "640px",
+        "_margin": {
+          "left": "auto",
+          "right": "auto"
+        }
+      }
+    },
+    {
+      "id": "bmcttl",
+      "name": "cards__title",
+      "settings": {
+        "_typography": {
+          "text-align": "center",
+          "font-size": "clamp(1.875rem, 4vw, 2.5rem)",
+          "font-weight": "700"
+        }
+      }
+    },
+    {
+      "id": "bmcsub",
+      "name": "cards__subtitle",
+      "settings": {
+        "_typography": {
+          "text-align": "center",
+          "color": {
+            "hex": "#64748b"
+          },
+          "line-height": "1.6"
+        }
+      }
+    },
+    {
+      "id": "bmcgrd",
+      "name": "cards__grid",
+      "settings": {
+        "_display": "grid",
+        "_gridTemplateColumns": "repeat(3, minmax(0, 1fr))",
+        "_gridGap": "32px",
+        "_alignItemsGrid": "stretch",
+        "_gridTemplateColumns:tablet_portrait": "1fr",
+        "_widthMax:tablet_portrait": "480px",
+        "_margin:tablet_portrait": {
+          "left": "auto",
+          "right": "auto"
+        }
+      }
+    },
+    {
+      "id": "bmcard",
+      "name": "card",
+      "settings": {
+        "_background": {
+          "color": {
+            "hex": "#ffffff"
+          }
+        },
+        "_border": {
+          "width": {
+            "top": "1px",
+            "right": "1px",
+            "bottom": "1px",
+            "left": "1px"
+          },
+          "style": "solid",
+          "color": {
+            "rgb": "rgba(15, 23, 42, 0.08)"
+          },
+          "radius": {
+            "top": "16px",
+            "right": "16px",
+            "bottom": "16px",
+            "left": "16px"
+          }
+        },
+        "_padding": {
+          "top": "32px",
+          "right": "32px",
+          "bottom": "32px",
+          "left": "32px"
+        },
+        "_rowGap": "16px",
+        "_alignItems": "flex-start",
+        "_position": "relative",
+        "_cssTransition": "transform 0.25s ease, box-shadow 0.25s ease",
+        "_transform:hover": {
+          "translateY": "-4"
+        },
+        "_boxShadow:hover": {
+          "values": {
+            "offsetX": "0",
+            "offsetY": "12",
+            "blur": "32",
+            "spread": "-8"
+          },
+          "color": {
+            "rgb": "rgba(15, 23, 42, 0.16)"
+          }
+        }
+      }
+    },
+    {
+      "id": "bmcftd",
+      "name": "card--featured",
+      "settings": {
+        "_background": {
+          "color": {
+            "hex": "#0f172a"
+          }
+        },
+        "_border": {
+          "width": {
+            "top": "1px",
+            "right": "1px",
+            "bottom": "1px",
+            "left": "1px"
+          },
+          "style": "solid",
+          "color": {
+            "rgb": "rgba(56, 189, 248, 0.4)"
+          },
+          "radius": {
+            "top": "16px",
+            "right": "16px",
+            "bottom": "16px",
+            "left": "16px"
+          }
+        },
+        "_boxShadow": {
+          "values": {
+            "offsetX": "0",
+            "offsetY": "16",
+            "blur": "40",
+            "spread": "-12"
+          },
+          "color": {
+            "rgb": "rgba(15, 23, 42, 0.35)"
+          }
+        },
+        "_cssCustom": ".card--featured .card__title { color: #ffffff; }\n.card--featured .card__text { color: rgba(226, 232, 240, 0.75); }"
+      }
+    },
+    {
+      "id": "bmcbdg",
+      "name": "card__badge",
+      "settings": {
+        "_typography": {
+          "font-size": "0.6875rem",
+          "font-weight": "700",
+          "letter-spacing": "0.08em",
+          "color": {
+            "hex": "#0f172a"
+          }
+        },
+        "_background": {
+          "color": {
+            "hex": "#38bdf8"
+          }
+        },
+        "_padding": {
+          "top": "5px",
+          "right": "10px",
+          "bottom": "5px",
+          "left": "10px"
+        },
+        "_border": {
+          "radius": {
+            "top": "999px",
+            "right": "999px",
+            "bottom": "999px",
+            "left": "999px"
+          }
+        },
+        "_position": "absolute",
+        "_top": "-12px",
+        "_right": "24px"
+      }
+    },
+    {
+      "id": "bmcico",
+      "name": "card__icon",
+      "settings": {
+        "_typography": {
+          "color": {
+            "hex": "#0ea5e9"
+          }
+        },
+        "_background": {
+          "color": {
+            "rgb": "rgba(14, 165, 233, 0.1)"
+          }
+        },
+        "_padding": {
+          "top": "12px",
+          "right": "12px",
+          "bottom": "12px",
+          "left": "12px"
+        },
+        "_border": {
+          "radius": {
+            "top": "12px",
+            "right": "12px",
+            "bottom": "12px",
+            "left": "12px"
+          }
+        }
+      }
+    },
+    {
+      "id": "bmcdtl",
+      "name": "card__title",
+      "settings": {
+        "_typography": {
+          "font-size": "1.25rem",
+          "font-weight": "600"
+        }
+      }
+    },
+    {
+      "id": "bmcdtx",
+      "name": "card__text",
+      "settings": {
+        "_typography": {
+          "color": {
+            "hex": "#64748b"
+          },
+          "line-height": "1.6"
+        },
+        "_flexGrow": "1"
+      }
+    },
+    {
+      "id": "bmclnk",
+      "name": "card__link",
+      "settings": {
+        "_typography": {
+          "font-weight": "600",
+          "font-size": "0.9375rem",
+          "color": {
+            "hex": "#0ea5e9"
+          }
+        },
+        "_cssTransition": "color 0.2s ease",
+        "_typography:hover": {
+          "color": {
+            "hex": "#0284c7"
+          }
+        }
+      }
+    },
+    {
+      "id": "bmclkf",
+      "name": "card__link--inverse",
+      "settings": {
+        "_typography": {
+          "color": {
+            "hex": "#38bdf8"
+          }
+        },
+        "_typography:hover": {
+          "color": {
+            "hex": "#7dd3fc"
+          }
+        }
+      }
+    }
+  ],
+  "globalElements": []
+}

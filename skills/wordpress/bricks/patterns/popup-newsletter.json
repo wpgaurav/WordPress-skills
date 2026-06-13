@@ -1,0 +1,53 @@
+{
+  "name": "popup-newsletter",
+  "title": "Newsletter Popup",
+  "type": "popup",
+  "content": [
+    { "id": "npwrp1", "name": "block", "parent": 0, "children": ["npttl1", "npsub1", "npfrm1", "npfin1"], "label": "Popup Body",
+      "settings": { "_rowGap": "16px", "_alignItems": "center" } },
+    { "id": "npttl1", "name": "heading", "parent": "npwrp1", "children": [],
+      "settings": { "text": "Get one practical Bricks tip every week", "tag": "h2",
+        "_typography": { "font-size": "1.5rem", "font-weight": "700", "text-align": "center", "line-height": "1.25" } } },
+    { "id": "npsub1", "name": "text-basic", "parent": "npwrp1", "children": [],
+      "settings": { "text": "Join 8,000+ builders. No spam, unsubscribe anytime.", "tag": "p",
+        "_typography": { "color": { "hex": "#64748b" }, "text-align": "center" } } },
+    { "id": "npfrm1", "name": "form", "parent": "npwrp1", "children": [],
+      "settings": {
+        "fields": [
+          { "id": "npfeml", "type": "email", "label": "Email", "placeholder": "you@example.com", "required": true, "width": "100" }
+        ],
+        "showLabels": false,
+        "submitButtonText": "Subscribe",
+        "actions": ["email"],
+        "emailSubject": "New newsletter signup",
+        "emailTo": "admin_email",
+        "emailContent": "New subscriber: {{npfeml}}",
+        "successMessage": "You're in! Check your inbox to confirm.",
+        "_width": "100%"
+      } },
+    { "id": "npfin1", "name": "text-basic", "parent": "npwrp1", "children": [],
+      "settings": { "text": "By subscribing you agree to our privacy policy.", "tag": "p",
+        "_typography": { "font-size": "0.8125rem", "color": { "hex": "#94a3b8" }, "text-align": "center" } } }
+  ],
+  "pageSettings": {
+    "popupContentWidth": "480px",
+    "popupJustifyConent": "center",
+    "popupAlignItems": "center",
+    "popupContentBackground": { "color": { "hex": "#ffffff" } },
+    "popupContentPadding": { "top": "40px", "right": "40px", "bottom": "32px", "left": "40px" },
+    "popupContentBorder": { "radius": { "top": "16px", "right": "16px", "bottom": "16px", "left": "16px" } },
+    "popupContentBoxShadow": {
+      "values": { "offsetX": "0", "offsetY": "24", "blur": "64", "spread": "-12" },
+      "color": { "rgb": "rgba(2, 6, 23, 0.4)" }
+    },
+    "popupBackground": { "color": { "rgb": "rgba(15, 23, 42, 0.6)" } },
+    "popupCloseOn": "backdrop",
+    "popupLimitLocalStorage": 1,
+    "popupZindex": "10000"
+  },
+  "templateSettings": {
+    "templateConditions": [ { "main": "any" } ]
+  },
+  "global_classes": [],
+  "globalVariables": []
+}

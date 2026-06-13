@@ -1,0 +1,102 @@
+{
+  "content": [
+    {
+      "id": "tmsec1",
+      "name": "section",
+      "parent": 0,
+      "children": ["tmcon1"],
+      "label": "Team (ACF Repeater)",
+      "settings": {
+        "tag": "section",
+        "_padding": { "top": "clamp(4rem, 8vw, 7rem)", "bottom": "clamp(4rem, 8vw, 7rem)" }
+      }
+    },
+    {
+      "id": "tmcon1",
+      "name": "container",
+      "parent": "tmsec1",
+      "children": ["tmttl1", "tmgrd1"],
+      "settings": { "_rowGap": "48px" }
+    },
+    {
+      "id": "tmttl1",
+      "name": "heading",
+      "parent": "tmcon1",
+      "children": [],
+      "settings": {
+        "text": "Meet the team",
+        "tag": "h2",
+        "_typography": { "text-align": "center", "font-size": "clamp(1.875rem, 4vw, 2.5rem)", "font-weight": "700" }
+      }
+    },
+    {
+      "id": "tmgrd1",
+      "name": "div",
+      "parent": "tmcon1",
+      "children": ["tmcrd1"],
+      "label": "Team Grid",
+      "settings": {
+        "_display": "grid",
+        "_gridTemplateColumns": "repeat(4, minmax(0, 1fr))",
+        "_gridGap": "32px",
+        "_gridTemplateColumns:tablet_portrait": "repeat(2, minmax(0, 1fr))",
+        "_gridTemplateColumns:mobile_portrait": "1fr"
+      }
+    },
+    {
+      "id": "tmcrd1",
+      "name": "block",
+      "parent": "tmgrd1",
+      "children": ["tmpho1", "tmnam1", "tmrol1"],
+      "label": "Member Card (loops acf_team_members)",
+      "settings": {
+        "hasLoop": true,
+        "query": { "objectType": "acf_team_members" },
+        "_rowGap": "12px",
+        "_alignItems": "center"
+      }
+    },
+    {
+      "id": "tmpho1",
+      "name": "image",
+      "parent": "tmcrd1",
+      "children": [],
+      "label": "Photo (acf_team_members_photo)",
+      "settings": {
+        "image": { "useDynamicData": "{acf_team_members_photo}", "size": "medium" },
+        "altText": "{acf_team_members_name}",
+        "_aspectRatio": "1",
+        "_objectFit": "cover",
+        "_width": "100%",
+        "_border": { "radius": { "top": "16px", "right": "16px", "bottom": "16px", "left": "16px" } }
+      }
+    },
+    {
+      "id": "tmnam1",
+      "name": "heading",
+      "parent": "tmcrd1",
+      "children": [],
+      "settings": {
+        "text": "{acf_team_members_name}",
+        "tag": "h3",
+        "_typography": { "font-size": "1.125rem", "font-weight": "600", "text-align": "center" }
+      }
+    },
+    {
+      "id": "tmrol1",
+      "name": "text-basic",
+      "parent": "tmcrd1",
+      "children": [],
+      "settings": {
+        "text": "{acf_team_members_role @fallback:'Team member'}",
+        "tag": "p",
+        "_typography": { "color": { "hex": "#64748b" }, "font-size": "0.9375rem", "text-align": "center" }
+      }
+    }
+  ],
+  "source": "bricksCopiedElements",
+  "sourceUrl": "https://github.com/wpgaurav/bricks-skills",
+  "version": "2.3.6",
+  "globalClasses": [],
+  "globalElements": []
+}

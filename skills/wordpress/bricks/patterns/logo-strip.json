@@ -1,0 +1,37 @@
+{
+  "content": [
+    { "id": "lssec1", "name": "section", "parent": 0, "children": ["lscon1"], "label": "Logo Strip",
+      "settings": { "tag": "section", "_padding": { "top": "48px", "bottom": "48px" },
+        "_border": { "width": { "top": "1px", "bottom": "1px" }, "style": "solid", "color": { "rgb": "rgba(15, 23, 42, 0.06)" } } } },
+    { "id": "lscon1", "name": "container", "parent": "lssec1", "children": ["lslbl1", "lsgrd1"],
+      "settings": { "_rowGap": "24px" } },
+    { "id": "lslbl1", "name": "text-basic", "parent": "lscon1", "children": [],
+      "settings": { "text": "Powering teams at", "tag": "p",
+        "_typography": { "font-size": "0.875rem", "font-weight": "500", "color": { "hex": "#94a3b8" }, "text-align": "center", "text-transform": "uppercase", "letter-spacing": "0.08em" } } },
+    { "id": "lsgrd1", "name": "div", "parent": "lscon1", "children": ["lsim01", "lsim02", "lsim03", "lsim04", "lsim05"], "label": "Logos",
+      "settings": { "_display": "grid", "_gridTemplateColumns": "repeat(auto-fit, minmax(120px, 1fr))", "_gridGap": "32px",
+        "_alignItemsGrid": "center", "_justifyItemsGrid": "center" } },
+    { "id": "lsim01", "name": "image", "parent": "lsgrd1", "children": [],
+      "settings": { "image": { "url": "https://example.com/logos/logo-1.svg" }, "altText": "Client logo", "_height": "32px", "_objectFit": "contain", "_cssGlobalClasses": ["lslogo"] } },
+    { "id": "lsim02", "name": "image", "parent": "lsgrd1", "children": [],
+      "settings": { "image": { "url": "https://example.com/logos/logo-2.svg" }, "altText": "Client logo", "_height": "32px", "_objectFit": "contain", "_cssGlobalClasses": ["lslogo"] } },
+    { "id": "lsim03", "name": "image", "parent": "lsgrd1", "children": [],
+      "settings": { "image": { "url": "https://example.com/logos/logo-3.svg" }, "altText": "Client logo", "_height": "32px", "_objectFit": "contain", "_cssGlobalClasses": ["lslogo"] } },
+    { "id": "lsim04", "name": "image", "parent": "lsgrd1", "children": [],
+      "settings": { "image": { "url": "https://example.com/logos/logo-4.svg" }, "altText": "Client logo", "_height": "32px", "_objectFit": "contain", "_cssGlobalClasses": ["lslogo"] } },
+    { "id": "lsim05", "name": "image", "parent": "lsgrd1", "children": [],
+      "settings": { "image": { "url": "https://example.com/logos/logo-5.svg" }, "altText": "Client logo", "_height": "32px", "_objectFit": "contain", "_cssGlobalClasses": ["lslogo"] } }
+  ],
+  "source": "bricksCopiedElements",
+  "sourceUrl": "https://github.com/wpgaurav/bricks-skills",
+  "version": "2.3.6",
+  "globalClasses": [
+    { "id": "lslogo", "name": "logo-strip-item",
+      "settings": {
+        "_cssFilters": { "grayscale": "100", "opacity": "60" },
+        "_cssTransition": "filter 0.2s ease, opacity 0.2s ease",
+        "_cssFilters:hover": { "grayscale": "0", "opacity": "100" }
+      } }
+  ],
+  "globalElements": []
+}

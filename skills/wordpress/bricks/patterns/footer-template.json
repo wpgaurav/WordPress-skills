@@ -1,0 +1,99 @@
+{
+  "name": "footer-main",
+  "title": "Footer Main",
+  "type": "footer",
+  "footer": [
+    { "id": "fosec1", "name": "section", "parent": 0, "children": ["focon1", "fobar1"], "label": "Footer",
+      "settings": {
+        "tag": "footer",
+        "_padding": { "top": "clamp(3rem, 6vw, 5rem)", "bottom": "32px" },
+        "_background": { "color": { "hex": "#0f172a" } },
+        "_rowGap": "48px"
+      } },
+    { "id": "focon1", "name": "container", "parent": "fosec1", "children": ["fobrd1", "focl01", "focl02", "focl03"], "label": "Footer Columns",
+      "settings": {
+        "_display": "grid",
+        "_gridTemplateColumns": "2fr 1fr 1fr 1fr",
+        "_gridGap": "48px",
+        "_gridTemplateColumns:tablet_portrait": "repeat(2, minmax(0, 1fr))",
+        "_gridTemplateColumns:mobile_portrait": "1fr"
+      } },
+    { "id": "fobrd1", "name": "block", "parent": "focon1", "children": ["folog1", "fodsc1"], "label": "Brand",
+      "settings": { "_rowGap": "16px", "_alignItems": "flex-start" } },
+    { "id": "folog1", "name": "logo", "parent": "fobrd1", "children": [],
+      "settings": { "logoText": "Acme", "logoHeight": "32" } },
+    { "id": "fodsc1", "name": "text-basic", "parent": "fobrd1", "children": [],
+      "settings": { "text": "The fastest way to design, build, and launch WordPress sites that feel hand-crafted.", "tag": "p",
+        "_typography": { "color": { "rgb": "rgba(226, 232, 240, 0.7)" }, "line-height": "1.6", "font-size": "0.9375rem" },
+        "_widthMax": "320px" } },
+    { "id": "focl01", "name": "block", "parent": "focon1", "children": ["foht01", "foln01", "foln02", "foln03"], "label": "Product",
+      "settings": { "_cssGlobalClasses": ["focol"] } },
+    { "id": "foht01", "name": "text-basic", "parent": "focl01", "children": [],
+      "settings": { "text": "Product", "tag": "span", "_cssGlobalClasses": ["fohead"] } },
+    { "id": "foln01", "name": "text-link", "parent": "focl01", "children": [],
+      "settings": { "text": "Features", "link": { "type": "external", "url": "/features" }, "_cssGlobalClasses": ["folink"] } },
+    { "id": "foln02", "name": "text-link", "parent": "focl01", "children": [],
+      "settings": { "text": "Pricing", "link": { "type": "external", "url": "/pricing" }, "_cssGlobalClasses": ["folink"] } },
+    { "id": "foln03", "name": "text-link", "parent": "focl01", "children": [],
+      "settings": { "text": "Changelog", "link": { "type": "external", "url": "/changelog" }, "_cssGlobalClasses": ["folink"] } },
+    { "id": "focl02", "name": "block", "parent": "focon1", "children": ["foht02", "foln04", "foln05", "foln06"], "label": "Resources",
+      "settings": { "_cssGlobalClasses": ["focol"] } },
+    { "id": "foht02", "name": "text-basic", "parent": "focl02", "children": [],
+      "settings": { "text": "Resources", "tag": "span", "_cssGlobalClasses": ["fohead"] } },
+    { "id": "foln04", "name": "text-link", "parent": "focl02", "children": [],
+      "settings": { "text": "Blog", "link": { "type": "external", "url": "/blog" }, "_cssGlobalClasses": ["folink"] } },
+    { "id": "foln05", "name": "text-link", "parent": "focl02", "children": [],
+      "settings": { "text": "Documentation", "link": { "type": "external", "url": "/docs" }, "_cssGlobalClasses": ["folink"] } },
+    { "id": "foln06", "name": "text-link", "parent": "focl02", "children": [],
+      "settings": { "text": "Community", "link": { "type": "external", "url": "/community" }, "_cssGlobalClasses": ["folink"] } },
+    { "id": "focl03", "name": "block", "parent": "focon1", "children": ["foht03", "foln07", "foln08", "foln09"], "label": "Company",
+      "settings": { "_cssGlobalClasses": ["focol"] } },
+    { "id": "foht03", "name": "text-basic", "parent": "focl03", "children": [],
+      "settings": { "text": "Company", "tag": "span", "_cssGlobalClasses": ["fohead"] } },
+    { "id": "foln07", "name": "text-link", "parent": "focl03", "children": [],
+      "settings": { "text": "About", "link": { "type": "external", "url": "/about" }, "_cssGlobalClasses": ["folink"] } },
+    { "id": "foln08", "name": "text-link", "parent": "focl03", "children": [],
+      "settings": { "text": "Contact", "link": { "type": "external", "url": "/contact" }, "_cssGlobalClasses": ["folink"] } },
+    { "id": "foln09", "name": "text-link", "parent": "focl03", "children": [],
+      "settings": { "text": "Privacy", "link": { "type": "external", "url": "/privacy" }, "_cssGlobalClasses": ["folink"] } },
+    { "id": "fobar1", "name": "container", "parent": "fosec1", "children": ["focpy1", "fosoc1"], "label": "Bottom Bar",
+      "settings": {
+        "_direction": "row",
+        "_justifyContent": "space-between",
+        "_alignItems": "center",
+        "_padding": { "top": "24px" },
+        "_border": { "width": { "top": "1px" }, "style": "solid", "color": { "rgb": "rgba(255, 255, 255, 0.1)" } },
+        "_direction:mobile_portrait": "column",
+        "_rowGap:mobile_portrait": "16px"
+      } },
+    { "id": "focpy1", "name": "text-basic", "parent": "fobar1", "children": [],
+      "settings": { "text": "© {current_date:Y} Acme Inc. All rights reserved.", "tag": "p",
+        "_typography": { "color": { "rgb": "rgba(226, 232, 240, 0.5)" }, "font-size": "0.875rem" } } },
+    { "id": "fosoc1", "name": "social-icons", "parent": "fobar1", "children": [],
+      "settings": {
+        "icons": [
+          { "id": "fosc01", "label": "X (Twitter)", "icon": { "library": "fontawesomeBrands", "icon": "fab fa-x-twitter" }, "link": { "type": "external", "url": "https://x.com/acme", "newTab": true, "ariaLabel": "Acme on X" } },
+          { "id": "fosc02", "label": "GitHub", "icon": { "library": "fontawesomeBrands", "icon": "fab fa-github" }, "link": { "type": "external", "url": "https://github.com/acme", "newTab": true, "ariaLabel": "Acme on GitHub" } },
+          { "id": "fosc03", "label": "YouTube", "icon": { "library": "fontawesomeBrands", "icon": "fab fa-youtube" }, "link": { "type": "external", "url": "https://youtube.com/@acme", "newTab": true, "ariaLabel": "Acme on YouTube" } }
+        ],
+        "iconColor": { "rgb": "rgba(226, 232, 240, 0.6)" },
+        "iconSize": "18px",
+        "gap": "16px"
+      } }
+  ],
+  "pageSettings": {},
+  "templateSettings": {
+    "templateConditions": [ { "main": "any" } ]
+  },
+  "global_classes": [
+    { "id": "focol", "name": "footer-col", "settings": { "_rowGap": "12px", "_alignItems": "flex-start" } },
+    { "id": "fohead", "name": "footer-heading",
+      "settings": { "_typography": { "font-size": "0.8125rem", "font-weight": "600", "letter-spacing": "0.08em", "text-transform": "uppercase", "color": { "rgb": "rgba(226, 232, 240, 0.5)" } },
+        "_margin": { "bottom": "8px" } } },
+    { "id": "folink", "name": "footer-link",
+      "settings": { "_typography": { "color": { "rgb": "rgba(226, 232, 240, 0.8)" }, "font-size": "0.9375rem" },
+        "_cssTransition": "color 0.2s ease",
+        "_typography:hover": { "color": { "hex": "#ffffff" } } } }
+  ],
+  "globalVariables": []
+}

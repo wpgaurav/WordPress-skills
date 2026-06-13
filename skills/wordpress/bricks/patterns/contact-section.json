@@ -1,0 +1,247 @@
+{
+  "content": [
+    {
+      "id": "cnsec1",
+      "name": "section",
+      "parent": 0,
+      "children": [
+        "cncon1"
+      ],
+      "label": "Contact",
+      "settings": {
+        "tag": "section",
+        "_cssId": "contact",
+        "_padding": {
+          "top": "clamp(4rem, 8vw, 7rem)",
+          "bottom": "clamp(4rem, 8vw, 7rem)"
+        },
+        "_background": {
+          "color": {
+            "hex": "#f8fafc"
+          }
+        }
+      }
+    },
+    {
+      "id": "cncon1",
+      "name": "container",
+      "parent": "cnsec1",
+      "children": [
+        "cnrow1"
+      ],
+      "settings": {}
+    },
+    {
+      "id": "cnrow1",
+      "name": "block",
+      "parent": "cncon1",
+      "children": [
+        "cninf1",
+        "cnfwr1"
+      ],
+      "label": "Two Columns",
+      "settings": {
+        "_direction": "row",
+        "_columnGap": "64px",
+        "_alignItems": "flex-start",
+        "_direction:tablet_portrait": "column",
+        "_rowGap:tablet_portrait": "48px"
+      }
+    },
+    {
+      "id": "cninf1",
+      "name": "block",
+      "parent": "cnrow1",
+      "children": [
+        "cnttl1",
+        "cntxt1",
+        "cneml1",
+        "cnphn1"
+      ],
+      "label": "Info Column",
+      "settings": {
+        "_rowGap": "20px",
+        "_width": "40%",
+        "_width:tablet_portrait": "100%"
+      }
+    },
+    {
+      "id": "cnttl1",
+      "name": "heading",
+      "parent": "cninf1",
+      "children": [],
+      "settings": {
+        "text": "Let's talk about your project",
+        "tag": "h2",
+        "_typography": {
+          "font-size": "clamp(1.875rem, 4vw, 2.5rem)",
+          "font-weight": "700",
+          "line-height": "1.15"
+        }
+      }
+    },
+    {
+      "id": "cntxt1",
+      "name": "text-basic",
+      "parent": "cninf1",
+      "children": [],
+      "settings": {
+        "text": "Tell us what you're building and we'll get back to you within one business day.",
+        "tag": "p",
+        "_typography": {
+          "color": {
+            "hex": "#64748b"
+          },
+          "line-height": "1.6"
+        }
+      }
+    },
+    {
+      "id": "cneml1",
+      "name": "icon-box",
+      "parent": "cninf1",
+      "children": [],
+      "settings": {
+        "icon": {
+          "library": "themify",
+          "icon": "ti-email"
+        },
+        "iconSize": "20px",
+        "iconColor": {
+          "hex": "#2563eb"
+        },
+        "content": "<a href=\"mailto:hello@example.com\">hello@example.com</a>",
+        "gap": "12px",
+        "direction": "row"
+      }
+    },
+    {
+      "id": "cnphn1",
+      "name": "icon-box",
+      "parent": "cninf1",
+      "children": [],
+      "settings": {
+        "icon": {
+          "library": "themify",
+          "icon": "ti-headphone-alt"
+        },
+        "iconSize": "20px",
+        "iconColor": {
+          "hex": "#2563eb"
+        },
+        "content": "<a href=\"tel:+15551234567\">+1 (555) 123-4567</a>",
+        "gap": "12px",
+        "direction": "row"
+      }
+    },
+    {
+      "id": "cnfwr1",
+      "name": "block",
+      "parent": "cnrow1",
+      "children": [
+        "cnfrm1"
+      ],
+      "label": "Form Card",
+      "settings": {
+        "_flexGrow": "1",
+        "_width:tablet_portrait": "100%",
+        "_background": {
+          "color": {
+            "hex": "#ffffff"
+          }
+        },
+        "_border": {
+          "width": {
+            "top": "1px",
+            "right": "1px",
+            "bottom": "1px",
+            "left": "1px"
+          },
+          "style": "solid",
+          "color": {
+            "rgb": "rgba(15, 23, 42, 0.08)"
+          },
+          "radius": {
+            "top": "16px",
+            "right": "16px",
+            "bottom": "16px",
+            "left": "16px"
+          }
+        },
+        "_padding": {
+          "top": "40px",
+          "right": "40px",
+          "bottom": "40px",
+          "left": "40px"
+        },
+        "_boxShadow": {
+          "values": {
+            "offsetX": "0",
+            "offsetY": "8",
+            "blur": "24",
+            "spread": "-12"
+          },
+          "color": {
+            "rgb": "rgba(15, 23, 42, 0.1)"
+          }
+        }
+      }
+    },
+    {
+      "id": "cnfrm1",
+      "name": "form",
+      "parent": "cnfwr1",
+      "children": [],
+      "settings": {
+        "fields": [
+          {
+            "id": "cnfnam",
+            "type": "text",
+            "label": "Name",
+            "placeholder": "Your name",
+            "required": true,
+            "width": "50"
+          },
+          {
+            "id": "cnfeml",
+            "type": "email",
+            "label": "Email",
+            "placeholder": "you@example.com",
+            "required": true,
+            "width": "50"
+          },
+          {
+            "id": "cnftop",
+            "type": "select",
+            "label": "Topic",
+            "options": "New project\nSupport\nPartnership\nOther",
+            "width": "100"
+          },
+          {
+            "id": "cnfmsg",
+            "type": "textarea",
+            "label": "Message",
+            "placeholder": "Tell us about your project…",
+            "required": true,
+            "width": "100"
+          }
+        ],
+        "submitButtonText": "Send message",
+        "actions": [
+          "email"
+        ],
+        "emailSubject": "Contact form: {{cnftop}} — {{cnfnam}}",
+        "emailTo": "admin_email",
+        "replyToEmail": "{{cnfeml}}",
+        "emailContent": "Name: {{cnfnam}}\nEmail: {{cnfeml}}\nTopic: {{cnftop}}\n\n{{cnfmsg}}",
+        "successMessage": "Thanks — we'll reply within one business day.",
+        "showLabels": true
+      }
+    }
+  ],
+  "source": "bricksCopiedElements",
+  "sourceUrl": "https://github.com/wpgaurav/bricks-skills",
+  "version": "2.3.6",
+  "globalClasses": [],
+  "globalElements": []
+}

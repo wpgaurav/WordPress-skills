@@ -1,0 +1,72 @@
+{
+  "content": [
+    { "id": "tssec1", "name": "section", "parent": 0, "children": ["tscon1"], "label": "Testimonials",
+      "settings": { "tag": "section", "_padding": { "top": "clamp(4rem, 8vw, 7rem)", "bottom": "clamp(4rem, 8vw, 7rem)" },
+        "_background": { "color": { "hex": "#0f172a" } } } },
+    { "id": "tscon1", "name": "container", "parent": "tssec1", "children": ["tsttl1", "tssld1"],
+      "settings": { "_rowGap": "48px" } },
+    { "id": "tsttl1", "name": "heading", "parent": "tscon1", "children": [],
+      "settings": { "text": "Loved by builders worldwide", "tag": "h2",
+        "_typography": { "text-align": "center", "font-size": "clamp(1.875rem, 4vw, 2.5rem)", "font-weight": "700", "color": { "hex": "#ffffff" } } } },
+    { "id": "tssld1", "name": "slider-nested", "parent": "tscon1", "children": ["tssl01", "tssl02", "tssl03"], "label": "Testimonial Slider",
+      "settings": {
+        "type": "loop",
+        "perPage": "2",
+        "perMove": "1",
+        "gap": "32",
+        "speed": "600",
+        "autoplay": true,
+        "interval": "6000",
+        "pauseOnHover": true,
+        "arrows": true,
+        "pagination": true,
+        "perPage:mobile_portrait": "1",
+        "arrowColor": { "rgb": "rgba(255,255,255,0.8)" },
+        "paginationColor": { "rgb": "rgba(255,255,255,0.4)" },
+        "paginationColorActive": { "hex": "#ffffff" }
+      } },
+    { "id": "tssl01", "name": "block", "parent": "tssld1", "children": ["tsqt01", "tsau01"], "label": "Slide",
+      "settings": { "_cssGlobalClasses": ["tscard"] } },
+    { "id": "tsqt01", "name": "text", "parent": "tssl01", "children": [],
+      "settings": { "text": "<p>“We rebuilt our entire agency site in two days. The JSON-paste workflow with reusable classes is a genuine superpower.”</p>",
+        "_typography": { "font-size": "1.125rem", "line-height": "1.6", "color": { "rgb": "rgba(226,232,240,0.95)" } } } },
+    { "id": "tsau01", "name": "text-basic", "parent": "tssl01", "children": [],
+      "settings": { "text": "Maya R. — Studio Northline", "tag": "p",
+        "_typography": { "font-weight": "600", "font-size": "0.9375rem", "color": { "hex": "#93c5fd" } } } },
+    { "id": "tssl02", "name": "block", "parent": "tssld1", "children": ["tsqt02", "tsau02"], "label": "Slide",
+      "settings": { "_cssGlobalClasses": ["tscard"] } },
+    { "id": "tsqt02", "name": "text", "parent": "tssl02", "children": [],
+      "settings": { "text": "<p>“Query loops plus ACF turned our documentation hub into a living product. Zero custom PHP.”</p>",
+        "_typography": { "font-size": "1.125rem", "line-height": "1.6", "color": { "rgb": "rgba(226,232,240,0.95)" } } } },
+    { "id": "tsau02", "name": "text-basic", "parent": "tssl02", "children": [],
+      "settings": { "text": "Dev P. — Fieldnotes SaaS", "tag": "p",
+        "_typography": { "font-weight": "600", "font-size": "0.9375rem", "color": { "hex": "#93c5fd" } } } },
+    { "id": "tssl03", "name": "block", "parent": "tssld1", "children": ["tsqt03", "tsau03"], "label": "Slide",
+      "settings": { "_cssGlobalClasses": ["tscard"] } },
+    { "id": "tsqt03", "name": "text", "parent": "tssl03", "children": [],
+      "settings": { "text": "<p>“Faceted filters that just work — our catalog finally feels like a modern app instead of a blog.”</p>",
+        "_typography": { "font-size": "1.125rem", "line-height": "1.6", "color": { "rgb": "rgba(226,232,240,0.95)" } } } },
+    { "id": "tsau03", "name": "text-basic", "parent": "tssl03", "children": [],
+      "settings": { "text": "Ana K. — Mercado Verde", "tag": "p",
+        "_typography": { "font-weight": "600", "font-size": "0.9375rem", "color": { "hex": "#93c5fd" } } } }
+  ],
+  "source": "bricksCopiedElements",
+  "sourceUrl": "https://github.com/wpgaurav/bricks-skills",
+  "version": "2.3.6",
+  "globalClasses": [
+    { "id": "tscard", "name": "testimonial-card",
+      "settings": {
+        "_background": { "color": { "rgb": "rgba(255, 255, 255, 0.05)" } },
+        "_border": {
+          "width": { "top": "1px", "right": "1px", "bottom": "1px", "left": "1px" },
+          "style": "solid",
+          "color": { "rgb": "rgba(255, 255, 255, 0.1)" },
+          "radius": { "top": "16px", "right": "16px", "bottom": "16px", "left": "16px" }
+        },
+        "_padding": { "top": "32px", "right": "32px", "bottom": "32px", "left": "32px" },
+        "_rowGap": "20px",
+        "_height": "100%"
+      } }
+  ],
+  "globalElements": []
+}

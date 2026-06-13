@@ -1,0 +1,55 @@
+{
+  "content": [
+    { "id": "ctsec1", "name": "section", "parent": 0, "children": ["ctcon1"], "label": "Final CTA",
+      "settings": { "tag": "section", "_padding": { "top": "clamp(3rem, 6vw, 5rem)", "bottom": "clamp(4rem, 8vw, 7rem)" } } },
+    { "id": "ctcon1", "name": "container", "parent": "ctsec1", "children": ["ctbox1"], "settings": {} },
+    { "id": "ctbox1", "name": "block", "parent": "ctcon1", "children": ["ctttl1", "ctsub1", "ctbtn1"], "label": "CTA Card",
+      "settings": {
+        "_alignItems": "center",
+        "_rowGap": "20px",
+        "_padding": { "top": "clamp(3rem, 6vw, 5rem)", "right": "clamp(1.5rem, 4vw, 4rem)", "bottom": "clamp(3rem, 6vw, 5rem)", "left": "clamp(1.5rem, 4vw, 4rem)" },
+        "_border": { "radius": { "top": "24px", "right": "24px", "bottom": "24px", "left": "24px" } },
+        "_background": { "color": { "hex": "#1d4ed8" } },
+        "_gradient": {
+          "applyTo": "background",
+          "gradientType": "linear",
+          "angle": "135",
+          "colors": [
+            { "color": { "hex": "#1d4ed8" }, "stop": "0" },
+            { "color": { "hex": "#7c3aed" }, "stop": "100" }
+          ]
+        },
+        "_interactions": [
+          { "id": "ctrv01", "trigger": "enterView", "action": "startAnimation", "animationType": "zoomIn", "animationDuration": "0.5s", "target": "self", "runOnce": true }
+        ]
+      } },
+    { "id": "ctttl1", "name": "heading", "parent": "ctbox1", "children": [],
+      "settings": { "text": "Ready to build something great?", "tag": "h2",
+        "_typography": { "text-align": "center", "font-size": "clamp(1.875rem, 4.5vw, 3rem)", "font-weight": "700", "color": { "hex": "#ffffff" }, "line-height": "1.15" },
+        "_widthMax": "680px" } },
+    { "id": "ctsub1", "name": "text-basic", "parent": "ctbox1", "children": [],
+      "settings": { "text": "Join 30,000+ builders shipping faster with a 14-day free trial. No credit card required.", "tag": "p",
+        "_typography": { "text-align": "center", "color": { "rgb": "rgba(255,255,255,0.85)" }, "line-height": "1.6" },
+        "_widthMax": "520px" } },
+    { "id": "ctbtn1", "name": "button", "parent": "ctbox1", "children": [],
+      "settings": { "text": "Start your free trial", "tag": "a",
+        "link": { "type": "external", "url": "/signup" },
+        "size": "lg",
+        "icon": { "library": "themify", "icon": "ti-arrow-right" },
+        "iconPosition": "right",
+        "iconGap": "8px",
+        "_background": { "color": { "hex": "#ffffff" } },
+        "_typography": { "color": { "hex": "#1d4ed8" }, "font-weight": "600" },
+        "_border": { "radius": { "top": "12px", "right": "12px", "bottom": "12px", "left": "12px" } },
+        "_margin": { "top": "8px" },
+        "_cssTransition": "transform 0.2s ease, box-shadow 0.2s ease",
+        "_transform:hover": { "translateY": "-2" },
+        "_boxShadow:hover": { "values": { "offsetX": "0", "offsetY": "12", "blur": "24", "spread": "-6" }, "color": { "rgb": "rgba(2, 6, 23, 0.4)" } }
+      } }
+  ],
+  "source": "bricksCopiedElements",
+  "sourceUrl": "https://github.com/wpgaurav/bricks-skills",
+  "version": "2.3.6",
+  "globalClasses": [],
+  "globalElements": []
+}

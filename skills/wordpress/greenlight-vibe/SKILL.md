@@ -26,7 +26,7 @@ Always build html first and use there best standards. But keep important rules
 9. Do not generate initial content for design via scripts, it must be added in DOM
 10. If you use headings tags or paragraphs, it's required to add margin top and bottom. If you use lists, it's required to disable left margin and spacing
 11. Do not use js inline parameters like "onclick"
-12. Important!!! All styles add in section `<style data-wp-block-html="css">...</style>`. All scripts add in section `<script data-wp-block-html="js">...</script>`
+12. Important!!! All styles add in section `<style data-wp-block-html="css">...</style>`. All scripts add in section `<script data-wp-block-html="js">...</script>`. But if you have `<link>` tags, keep them as they are. 
 
 ***Important*** When you have centered content inside full width section, use next code for such sections. They must be most parent blocks on page
 

@@ -1,0 +1,163 @@
+{
+  "content": [
+    {
+      "id": "hrsec1",
+      "name": "section",
+      "parent": 0,
+      "children": ["hrcon1"],
+      "label": "Hero",
+      "settings": {
+        "tag": "section",
+        "_padding": { "top": "clamp(6rem, 12vw, 10rem)", "bottom": "clamp(6rem, 12vw, 10rem)" },
+        "_background": { "color": { "hex": "#0f172a" } },
+        "_gradient": {
+          "applyTo": "background",
+          "gradientType": "radial",
+          "colors": [
+            { "color": { "rgb": "rgba(29, 78, 216, 0.35)" }, "stop": "0" },
+            { "color": { "rgb": "rgba(15, 23, 42, 0)" }, "stop": "60" }
+          ]
+        }
+      }
+    },
+    {
+      "id": "hrcon1",
+      "name": "container",
+      "parent": "hrsec1",
+      "children": ["hreyb1", "hrttl1", "hrsub1", "hrbtns"],
+      "label": "Hero Content",
+      "settings": {
+        "_alignItems": "center",
+        "_rowGap": "24px"
+      }
+    },
+    {
+      "id": "hreyb1",
+      "name": "text-basic",
+      "parent": "hrcon1",
+      "children": [],
+      "label": "Eyebrow",
+      "settings": {
+        "text": "Now with AI-powered workflows",
+        "tag": "span",
+        "_typography": {
+          "font-size": "0.8125rem",
+          "font-weight": "600",
+          "letter-spacing": "0.08em",
+          "text-transform": "uppercase",
+          "color": { "hex": "#93c5fd" }
+        },
+        "_padding": { "top": "8px", "right": "16px", "bottom": "8px", "left": "16px" },
+        "_border": {
+          "width": { "top": "1px", "right": "1px", "bottom": "1px", "left": "1px" },
+          "style": "solid",
+          "color": { "rgb": "rgba(147, 197, 253, 0.3)" },
+          "radius": { "top": "999px", "right": "999px", "bottom": "999px", "left": "999px" }
+        }
+      }
+    },
+    {
+      "id": "hrttl1",
+      "name": "heading",
+      "parent": "hrcon1",
+      "children": [],
+      "label": "Headline",
+      "settings": {
+        "text": "Ship beautiful websites in hours, not weeks",
+        "tag": "h1",
+        "_typography": {
+          "font-size": "clamp(2.5rem, 6vw, 4rem)",
+          "font-weight": "700",
+          "line-height": "1.1",
+          "letter-spacing": "-0.02em",
+          "text-align": "center",
+          "color": { "hex": "#ffffff" }
+        },
+        "_widthMax": "820px"
+      }
+    },
+    {
+      "id": "hrsub1",
+      "name": "text-basic",
+      "parent": "hrcon1",
+      "children": [],
+      "label": "Subheadline",
+      "settings": {
+        "text": "Design, build, and launch fully responsive WordPress sites with a visual builder that gets out of your way.",
+        "tag": "p",
+        "_typography": {
+          "font-size": "1.125rem",
+          "line-height": "1.6",
+          "text-align": "center",
+          "color": { "rgb": "rgba(226, 232, 240, 0.85)" }
+        },
+        "_widthMax": "600px"
+      }
+    },
+    {
+      "id": "hrbtns",
+      "name": "block",
+      "parent": "hrcon1",
+      "children": ["hrcta1", "hrcta2"],
+      "label": "CTA Row",
+      "settings": {
+        "_direction": "row",
+        "_columnGap": "16px",
+        "_margin": { "top": "16px" },
+        "_direction:mobile_portrait": "column",
+        "_rowGap:mobile_portrait": "12px",
+        "_width:mobile_portrait": "100%"
+      }
+    },
+    {
+      "id": "hrcta1",
+      "name": "button",
+      "parent": "hrbtns",
+      "children": [],
+      "label": "Primary CTA",
+      "settings": {
+        "text": "Start free trial",
+        "tag": "a",
+        "link": { "type": "external", "url": "#pricing" },
+        "size": "lg",
+        "_background": { "color": { "hex": "#2563eb" } },
+        "_typography": { "color": { "hex": "#ffffff" }, "font-weight": "600" },
+        "_border": { "radius": { "top": "10px", "right": "10px", "bottom": "10px", "left": "10px" } },
+        "_cssTransition": "background-color 0.2s ease, transform 0.2s ease",
+        "_background:hover": { "color": { "hex": "#1d4ed8" } },
+        "_transform:hover": { "translateY": "-2" }
+      }
+    },
+    {
+      "id": "hrcta2",
+      "name": "button",
+      "parent": "hrbtns",
+      "children": [],
+      "label": "Secondary CTA",
+      "settings": {
+        "text": "Watch demo",
+        "tag": "a",
+        "link": { "type": "external", "url": "#demo" },
+        "size": "lg",
+        "icon": { "library": "themify", "icon": "ti-control-play" },
+        "iconPosition": "left",
+        "iconGap": "8px",
+        "_background": { "color": { "rgb": "rgba(255, 255, 255, 0.08)" } },
+        "_typography": { "color": { "hex": "#ffffff" }, "font-weight": "600" },
+        "_border": {
+          "width": { "top": "1px", "right": "1px", "bottom": "1px", "left": "1px" },
+          "style": "solid",
+          "color": { "rgb": "rgba(255, 255, 255, 0.2)" },
+          "radius": { "top": "10px", "right": "10px", "bottom": "10px", "left": "10px" }
+        },
+        "_cssTransition": "background-color 0.2s ease",
+        "_background:hover": { "color": { "rgb": "rgba(255, 255, 255, 0.16)" } }
+      }
+    }
+  ],
+  "source": "bricksCopiedElements",
+  "sourceUrl": "https://github.com/wpgaurav/bricks-skills",
+  "version": "2.3.6",
+  "globalClasses": [],
+  "globalElements": []
+}

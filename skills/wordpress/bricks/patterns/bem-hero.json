@@ -1,0 +1,99 @@
+{
+  "content": [
+    { "id": "bhsec1", "name": "section", "parent": 0, "children": ["bhcon1"], "label": "Hero (BEM)",
+      "settings": { "tag": "section", "_cssGlobalClasses": ["bmhero"] } },
+    { "id": "bhcon1", "name": "container", "parent": "bhsec1", "children": ["bheyb1", "bhttl1", "bhsub1", "bhact1"], "label": "hero__inner",
+      "settings": { "_cssGlobalClasses": ["bmhinn"] } },
+    { "id": "bheyb1", "name": "text-basic", "parent": "bhcon1", "children": [], "label": "hero__eyebrow",
+      "settings": { "text": "BEM TEST BUILD", "tag": "span", "_cssGlobalClasses": ["bmheyb"] } },
+    { "id": "bhttl1", "name": "heading", "parent": "bhcon1", "children": [], "label": "hero__title",
+      "settings": { "text": "Classes do the styling, elements stay clean", "tag": "h1", "_cssGlobalClasses": ["bmhttl"] } },
+    { "id": "bhsub1", "name": "text-basic", "parent": "bhcon1", "children": [], "label": "hero__subtitle",
+      "settings": { "text": "Every visual decision in this section lives in a BEM-named global class. Inspect the structure panel: elements carry only content.", "tag": "p", "_cssGlobalClasses": ["bmhsub"] } },
+    { "id": "bhact1", "name": "block", "parent": "bhcon1", "children": ["bhbt01", "bhbt02"], "label": "hero__actions",
+      "settings": { "_cssGlobalClasses": ["bmhact"] } },
+    { "id": "bhbt01", "name": "button", "parent": "bhact1", "children": [], "label": "btn btn--primary",
+      "settings": { "text": "Primary action", "tag": "a", "link": { "type": "external", "url": "#primary" },
+        "_cssGlobalClasses": ["bmbtn", "bmbtnp"] } },
+    { "id": "bhbt02", "name": "button", "parent": "bhact1", "children": [], "label": "btn btn--ghost",
+      "settings": { "text": "Ghost action", "tag": "a", "link": { "type": "external", "url": "#ghost" },
+        "_cssGlobalClasses": ["bmbtn", "bmbtng"] } }
+  ],
+  "source": "bricksCopiedElements",
+  "sourceUrl": "https://github.com/wpgaurav/bricks-skills",
+  "version": "2.3.6",
+  "globalClasses": [
+    { "id": "bmhero", "name": "hero",
+      "settings": {
+        "_padding": { "top": "clamp(6rem, 12vw, 9rem)", "bottom": "clamp(6rem, 12vw, 9rem)" },
+        "_background": { "color": { "hex": "#0b1120" } },
+        "_gradient": {
+          "applyTo": "background",
+          "gradientType": "radial",
+          "colors": [
+            { "color": { "rgb": "rgba(56, 189, 248, 0.25)" }, "stop": "0" },
+            { "color": { "rgb": "rgba(11, 17, 32, 0)" }, "stop": "55" }
+          ]
+        }
+      } },
+    { "id": "bmhinn", "name": "hero__inner",
+      "settings": { "_alignItems": "center", "_rowGap": "24px" } },
+    { "id": "bmheyb", "name": "hero__eyebrow",
+      "settings": {
+        "_typography": { "font-size": "0.8125rem", "font-weight": "600", "letter-spacing": "0.1em", "text-transform": "uppercase", "color": { "hex": "#38bdf8" } },
+        "_padding": { "top": "8px", "right": "16px", "bottom": "8px", "left": "16px" },
+        "_border": {
+          "width": { "top": "1px", "right": "1px", "bottom": "1px", "left": "1px" },
+          "style": "solid",
+          "color": { "rgb": "rgba(56, 189, 248, 0.3)" },
+          "radius": { "top": "999px", "right": "999px", "bottom": "999px", "left": "999px" }
+        }
+      } },
+    { "id": "bmhttl", "name": "hero__title",
+      "settings": {
+        "_typography": { "font-size": "clamp(2.5rem, 6vw, 4rem)", "font-weight": "700", "line-height": "1.1", "letter-spacing": "-0.02em", "text-align": "center", "color": { "hex": "#ffffff" } },
+        "_widthMax": "800px"
+      } },
+    { "id": "bmhsub", "name": "hero__subtitle",
+      "settings": {
+        "_typography": { "font-size": "1.125rem", "line-height": "1.6", "text-align": "center", "color": { "rgb": "rgba(226, 232, 240, 0.8)" } },
+        "_widthMax": "600px"
+      } },
+    { "id": "bmhact", "name": "hero__actions",
+      "settings": {
+        "_direction": "row",
+        "_columnGap": "16px",
+        "_margin": { "top": "16px" },
+        "_direction:mobile_portrait": "column",
+        "_rowGap:mobile_portrait": "12px",
+        "_width:mobile_portrait": "100%"
+      } },
+    { "id": "bmbtn", "name": "btn",
+      "settings": {
+        "_typography": { "font-weight": "600", "font-size": "1rem", "text-align": "center" },
+        "_padding": { "top": "14px", "right": "28px", "bottom": "14px", "left": "28px" },
+        "_border": { "radius": { "top": "10px", "right": "10px", "bottom": "10px", "left": "10px" } },
+        "_cssTransition": "background-color 0.2s ease, transform 0.2s ease",
+        "_transform:hover": { "translateY": "-2" }
+      } },
+    { "id": "bmbtnp", "name": "btn--primary",
+      "settings": {
+        "_background": { "color": { "hex": "#0ea5e9" } },
+        "_typography": { "color": { "hex": "#ffffff" } },
+        "_background:hover": { "color": { "hex": "#0284c7" } }
+      } },
+    { "id": "bmbtng", "name": "btn--ghost",
+      "settings": {
+        "_background": { "color": { "rgb": "rgba(255, 255, 255, 0.06)" } },
+        "_typography": { "color": { "hex": "#ffffff" } },
+        "_border": {
+          "width": { "top": "1px", "right": "1px", "bottom": "1px", "left": "1px" },
+          "style": "solid",
+          "color": { "rgb": "rgba(255, 255, 255, 0.25)" },
+          "radius": { "top": "10px", "right": "10px", "bottom": "10px", "left": "10px" }
+        },
+        "_background:hover": { "color": { "rgb": "rgba(255, 255, 255, 0.14)" } }
+      } }
+  ],
+  "globalElements": []
+}

@@ -1,0 +1,75 @@
+{
+  "name": "header-main",
+  "title": "Header Main",
+  "type": "header",
+  "header": [
+    { "id": "hdsec1", "name": "section", "parent": 0, "children": ["hdcon1"], "label": "Header",
+      "settings": {
+        "tag": "header",
+        "_padding": { "top": "16px", "bottom": "16px" },
+        "_background": { "color": { "rgb": "rgba(255, 255, 255, 0.9)" } },
+        "_cssCustom": "%root% { backdrop-filter: blur(12px); }"
+      } },
+    { "id": "hdcon1", "name": "container", "parent": "hdsec1", "children": ["hdlgo1", "hdnav1", "hdcta1"], "label": "Header Row",
+      "settings": {
+        "_direction": "row",
+        "_alignItems": "center",
+        "_justifyContent": "space-between",
+        "_columnGap": "32px"
+      } },
+    { "id": "hdlgo1", "name": "logo", "parent": "hdcon1", "children": [],
+      "settings": { "logoText": "Acme", "logoHeight": "36" } },
+    { "id": "hdnav1", "name": "nav-nested", "parent": "hdcon1", "children": ["hdlk01", "hdlk02", "hddd01", "hdlk03"], "label": "Primary Nav",
+      "settings": {
+        "ariaLabel": "Main navigation",
+        "mobileMenu": "tablet_portrait",
+        "_columnGap": "8px"
+      } },
+    { "id": "hdlk01", "name": "text-link", "parent": "hdnav1", "children": [],
+      "settings": { "text": "Features", "link": { "type": "external", "url": "/features" },
+        "_padding": { "top": "8px", "right": "14px", "bottom": "8px", "left": "14px" },
+        "_typography": { "font-weight": "500", "font-size": "0.9375rem" } } },
+    { "id": "hdlk02", "name": "text-link", "parent": "hdnav1", "children": [],
+      "settings": { "text": "Pricing", "link": { "type": "external", "url": "/pricing" },
+        "_padding": { "top": "8px", "right": "14px", "bottom": "8px", "left": "14px" },
+        "_typography": { "font-weight": "500", "font-size": "0.9375rem" } } },
+    { "id": "hddd01", "name": "dropdown", "parent": "hdnav1", "children": ["hdlk04", "hdlk05"], "label": "Resources",
+      "settings": { "text": "Resources",
+        "_padding": { "top": "8px", "right": "14px", "bottom": "8px", "left": "14px" },
+        "_typography": { "font-weight": "500", "font-size": "0.9375rem" } } },
+    { "id": "hdlk04", "name": "text-link", "parent": "hddd01", "children": [],
+      "settings": { "text": "Blog", "link": { "type": "external", "url": "/blog" },
+        "_padding": { "top": "8px", "right": "16px", "bottom": "8px", "left": "16px" } } },
+    { "id": "hdlk05", "name": "text-link", "parent": "hddd01", "children": [],
+      "settings": { "text": "Documentation", "link": { "type": "external", "url": "/docs" },
+        "_padding": { "top": "8px", "right": "16px", "bottom": "8px", "left": "16px" } } },
+    { "id": "hdlk03", "name": "text-link", "parent": "hdnav1", "children": [],
+      "settings": { "text": "About", "link": { "type": "external", "url": "/about" },
+        "_padding": { "top": "8px", "right": "14px", "bottom": "8px", "left": "14px" },
+        "_typography": { "font-weight": "500", "font-size": "0.9375rem" } } },
+    { "id": "hdcta1", "name": "button", "parent": "hdcon1", "children": [],
+      "settings": { "text": "Get started", "tag": "a",
+        "link": { "type": "external", "url": "/signup" },
+        "size": "sm",
+        "_background": { "color": { "hex": "#1d4ed8" } },
+        "_typography": { "color": { "hex": "#ffffff" }, "font-weight": "600" },
+        "_border": { "radius": { "top": "8px", "right": "8px", "bottom": "8px", "left": "8px" } },
+        "_cssTransition": "background-color 0.2s ease",
+        "_background:hover": { "color": { "hex": "#1e40af" } },
+        "_display:mobile_portrait": "none"
+      } }
+  ],
+  "pageSettings": {},
+  "templateSettings": {
+    "templateConditions": [ { "main": "any" } ],
+    "headerSticky": true,
+    "headerStickySlideUpAfter": "400",
+    "headerStickyScrollingBackground": { "color": { "rgb": "rgba(255, 255, 255, 0.98)" } },
+    "headerStickyScrollingBoxShadow": {
+      "values": { "offsetX": "0", "offsetY": "2", "blur": "12", "spread": "0" },
+      "color": { "rgb": "rgba(15, 23, 42, 0.08)" }
+    }
+  },
+  "global_classes": [],
+  "globalVariables": []
+}

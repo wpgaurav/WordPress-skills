@@ -1,3 +1,8 @@
+---
+name: fluent-community
+description: "Use when pushing content, docs, posts, changelogs, or other updates to Fluent Community spaces through the Fluent Community REST API."
+---
+
 # Fluent Community REST API
 
 Push content (docs, posts, changelogs) to Fluent Community spaces on your-site.com.

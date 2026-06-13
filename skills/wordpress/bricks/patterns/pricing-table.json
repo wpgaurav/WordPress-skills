@@ -1,0 +1,285 @@
+{
+  "content": [
+    {
+      "id": "prsec1",
+      "name": "section",
+      "parent": 0,
+      "children": ["prcon1"],
+      "label": "Pricing",
+      "settings": {
+        "tag": "section",
+        "_cssId": "pricing",
+        "_padding": { "top": "clamp(4rem, 8vw, 7rem)", "bottom": "clamp(4rem, 8vw, 7rem)" }
+      }
+    },
+    {
+      "id": "prcon1",
+      "name": "container",
+      "parent": "prsec1",
+      "children": ["prhdr1", "prgrd1"],
+      "settings": { "_rowGap": "56px" }
+    },
+    {
+      "id": "prhdr1",
+      "name": "heading",
+      "parent": "prcon1",
+      "children": [],
+      "settings": {
+        "text": "Simple, honest pricing",
+        "tag": "h2",
+        "_typography": { "text-align": "center", "font-size": "clamp(1.875rem, 4vw, 2.5rem)", "font-weight": "700" }
+      }
+    },
+    {
+      "id": "prgrd1",
+      "name": "div",
+      "parent": "prcon1",
+      "children": ["prtr01", "prtr02", "prtr03"],
+      "label": "Tiers",
+      "settings": {
+        "_display": "grid",
+        "_gridTemplateColumns": "repeat(3, minmax(0, 1fr))",
+        "_gridGap": "32px",
+        "_alignItemsGrid": "stretch",
+        "_gridTemplateColumns:tablet_portrait": "1fr",
+        "_widthMax:tablet_portrait": "480px",
+        "_margin:tablet_portrait": { "left": "auto", "right": "auto" }
+      }
+    },
+    {
+      "id": "prtr01",
+      "name": "block",
+      "parent": "prgrd1",
+      "children": ["prnm01", "prpc01", "prls01", "prbt01"],
+      "label": "Starter",
+      "settings": { "_cssGlobalClasses": ["prcard"] }
+    },
+    {
+      "id": "prnm01",
+      "name": "heading",
+      "parent": "prtr01",
+      "children": [],
+      "settings": { "text": "Starter", "tag": "h3", "_typography": { "font-size": "1.125rem", "font-weight": "600" } }
+    },
+    {
+      "id": "prpc01",
+      "name": "text-basic",
+      "parent": "prtr01",
+      "children": [],
+      "settings": {
+        "text": "$19<span style=\"font-size:1rem;color:#64748b\">/mo</span>",
+        "tag": "p",
+        "_typography": { "font-size": "2.5rem", "font-weight": "700", "line-height": "1" }
+      }
+    },
+    {
+      "id": "prls01",
+      "name": "list",
+      "parent": "prtr01",
+      "children": [],
+      "settings": {
+        "items": [
+          { "id": "pl01aa", "title": "1 website" },
+          { "id": "pl01bb", "title": "Core blocks & templates" },
+          { "id": "pl01cc", "title": "Email support" }
+        ],
+        "icon": { "library": "themify", "icon": "ti-check" },
+        "iconColor": { "hex": "#16a34a" },
+        "_flexGrow": "1"
+      }
+    },
+    {
+      "id": "prbt01",
+      "name": "button",
+      "parent": "prtr01",
+      "children": [],
+      "settings": {
+        "text": "Choose Starter",
+        "tag": "a",
+        "link": { "type": "external", "url": "#checkout-starter" },
+        "_cssGlobalClasses": ["prbtno"]
+      }
+    },
+    {
+      "id": "prtr02",
+      "name": "block",
+      "parent": "prgrd1",
+      "children": ["prbd02", "prnm02", "prpc02", "prls02", "prbt02"],
+      "label": "Pro (Featured)",
+      "settings": {
+        "_cssGlobalClasses": ["prcard"],
+        "_border": {
+          "width": { "top": "2px", "right": "2px", "bottom": "2px", "left": "2px" },
+          "style": "solid",
+          "color": { "hex": "#2563eb" },
+          "radius": { "top": "16px", "right": "16px", "bottom": "16px", "left": "16px" }
+        },
+        "_position": "relative",
+        "_transform:tablet_portrait": { "scaleX": "1", "scaleY": "1" }
+      }
+    },
+    {
+      "id": "prbd02",
+      "name": "text-basic",
+      "parent": "prtr02",
+      "children": [],
+      "label": "Badge",
+      "settings": {
+        "text": "MOST POPULAR",
+        "tag": "span",
+        "_typography": { "font-size": "0.6875rem", "font-weight": "700", "letter-spacing": "0.08em", "color": { "hex": "#ffffff" } },
+        "_background": { "color": { "hex": "#2563eb" } },
+        "_padding": { "top": "6px", "right": "12px", "bottom": "6px", "left": "12px" },
+        "_border": { "radius": { "top": "999px", "right": "999px", "bottom": "999px", "left": "999px" } },
+        "_position": "absolute",
+        "_top": "-14px",
+        "_left": "50%",
+        "_transform": { "translateX": "-50%" }
+      }
+    },
+    {
+      "id": "prnm02",
+      "name": "heading",
+      "parent": "prtr02",
+      "children": [],
+      "settings": { "text": "Pro", "tag": "h3", "_typography": { "font-size": "1.125rem", "font-weight": "600" } }
+    },
+    {
+      "id": "prpc02",
+      "name": "text-basic",
+      "parent": "prtr02",
+      "children": [],
+      "settings": {
+        "text": "$49<span style=\"font-size:1rem;color:#64748b\">/mo</span>",
+        "tag": "p",
+        "_typography": { "font-size": "2.5rem", "font-weight": "700", "line-height": "1" }
+      }
+    },
+    {
+      "id": "prls02",
+      "name": "list",
+      "parent": "prtr02",
+      "children": [],
+      "settings": {
+        "items": [
+          { "id": "pl02aa", "title": "10 websites" },
+          { "id": "pl02bb", "title": "All blocks, loops & filters" },
+          { "id": "pl02cc", "title": "Priority support" },
+          { "id": "pl02dd", "title": "White-label exports" }
+        ],
+        "icon": { "library": "themify", "icon": "ti-check" },
+        "iconColor": { "hex": "#16a34a" },
+        "_flexGrow": "1"
+      }
+    },
+    {
+      "id": "prbt02",
+      "name": "button",
+      "parent": "prtr02",
+      "children": [],
+      "settings": {
+        "text": "Choose Pro",
+        "tag": "a",
+        "link": { "type": "external", "url": "#checkout-pro" },
+        "_background": { "color": { "hex": "#2563eb" } },
+        "_typography": { "color": { "hex": "#ffffff" }, "font-weight": "600", "text-align": "center" },
+        "_border": { "radius": { "top": "10px", "right": "10px", "bottom": "10px", "left": "10px" } },
+        "_width": "100%",
+        "_cssTransition": "background-color 0.2s ease",
+        "_background:hover": { "color": { "hex": "#1d4ed8" } }
+      }
+    },
+    {
+      "id": "prtr03",
+      "name": "block",
+      "parent": "prgrd1",
+      "children": ["prnm03", "prpc03", "prls03", "prbt03"],
+      "label": "Agency",
+      "settings": { "_cssGlobalClasses": ["prcard"] }
+    },
+    {
+      "id": "prnm03",
+      "name": "heading",
+      "parent": "prtr03",
+      "children": [],
+      "settings": { "text": "Agency", "tag": "h3", "_typography": { "font-size": "1.125rem", "font-weight": "600" } }
+    },
+    {
+      "id": "prpc03",
+      "name": "text-basic",
+      "parent": "prtr03",
+      "children": [],
+      "settings": {
+        "text": "$129<span style=\"font-size:1rem;color:#64748b\">/mo</span>",
+        "tag": "p",
+        "_typography": { "font-size": "2.5rem", "font-weight": "700", "line-height": "1" }
+      }
+    },
+    {
+      "id": "prls03",
+      "name": "list",
+      "parent": "prtr03",
+      "children": [],
+      "settings": {
+        "items": [
+          { "id": "pl03aa", "title": "Unlimited websites" },
+          { "id": "pl03bb", "title": "Client billing & roles" },
+          { "id": "pl03cc", "title": "Dedicated support" }
+        ],
+        "icon": { "library": "themify", "icon": "ti-check" },
+        "iconColor": { "hex": "#16a34a" },
+        "_flexGrow": "1"
+      }
+    },
+    {
+      "id": "prbt03",
+      "name": "button",
+      "parent": "prtr03",
+      "children": [],
+      "settings": {
+        "text": "Choose Agency",
+        "tag": "a",
+        "link": { "type": "external", "url": "#checkout-agency" },
+        "_cssGlobalClasses": ["prbtno"]
+      }
+    }
+  ],
+  "source": "bricksCopiedElements",
+  "sourceUrl": "https://github.com/wpgaurav/bricks-skills",
+  "version": "2.3.6",
+  "globalClasses": [
+    {
+      "id": "prcard",
+      "name": "pricing-card",
+      "settings": {
+        "_background": { "color": { "hex": "#ffffff" } },
+        "_border": {
+          "width": { "top": "1px", "right": "1px", "bottom": "1px", "left": "1px" },
+          "style": "solid",
+          "color": { "rgb": "rgba(15, 23, 42, 0.08)" },
+          "radius": { "top": "16px", "right": "16px", "bottom": "16px", "left": "16px" }
+        },
+        "_padding": { "top": "40px", "right": "32px", "bottom": "40px", "left": "32px" },
+        "_rowGap": "24px"
+      }
+    },
+    {
+      "id": "prbtno",
+      "name": "pricing-button-outline",
+      "settings": {
+        "_background": { "color": { "rgb": "rgba(37, 99, 235, 0.06)" } },
+        "_typography": { "color": { "hex": "#1d4ed8" }, "font-weight": "600", "text-align": "center" },
+        "_border": {
+          "width": { "top": "1px", "right": "1px", "bottom": "1px", "left": "1px" },
+          "style": "solid",
+          "color": { "rgb": "rgba(37, 99, 235, 0.3)" },
+          "radius": { "top": "10px", "right": "10px", "bottom": "10px", "left": "10px" }
+        },
+        "_width": "100%",
+        "_cssTransition": "background-color 0.2s ease",
+        "_background:hover": { "color": { "rgb": "rgba(37, 99, 235, 0.12)" } }
+      }
+    }
+  ],
+  "globalElements": []
+}

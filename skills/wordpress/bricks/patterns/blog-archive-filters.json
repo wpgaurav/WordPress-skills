@@ -1,0 +1,60 @@
+{
+  "content": [
+    { "id": "basec1", "name": "section", "parent": 0, "children": ["bacon1"], "label": "Filterable Blog Archive",
+      "settings": { "tag": "section", "_padding": { "top": "clamp(4rem, 8vw, 6rem)", "bottom": "clamp(4rem, 8vw, 6rem)" } } },
+    { "id": "bacon1", "name": "container", "parent": "basec1", "children": ["babar1", "bagrd1", "bapag1"],
+      "settings": { "_rowGap": "40px" } },
+    { "id": "babar1", "name": "block", "parent": "bacon1", "children": ["basrc1", "bacat1", "basrt1", "bacnt1"], "label": "Filter Bar",
+      "settings": { "_direction": "row", "_columnGap": "16px", "_rowGap": "12px", "_flexWrap": "wrap", "_alignItems": "center" } },
+    { "id": "basrc1", "name": "filter-search", "parent": "babar1", "children": [],
+      "settings": { "filterQueryId": "baloop", "placeholder": "Search articles…", "filterInputDebounce": 400, "filterMinChars": 2, "_widthMin": "260px" } },
+    { "id": "bacat1", "name": "filter-select", "parent": "babar1", "children": [],
+      "settings": { "filterQueryId": "baloop", "filterSource": "taxonomy", "filterTaxonomy": "category", "filterLabelAll": "All topics", "filterNiceName": "topic", "filterHideEmpty": true } },
+    { "id": "basrt1", "name": "filter-select", "parent": "babar1", "children": [],
+      "settings": { "filterQueryId": "baloop", "filterAction": "sort", "filterLabelAll": "Sort by",
+        "sortOptions": [
+          { "id": "baso01", "optionLabel": "Newest first", "optionSource": "date", "optionOrder": "DESC" },
+          { "id": "baso02", "optionLabel": "Oldest first", "optionSource": "date", "optionOrder": "ASC" },
+          { "id": "baso03", "optionLabel": "Title A–Z", "optionSource": "title", "optionOrder": "ASC" }
+        ] } },
+    { "id": "bacnt1", "name": "query-results-summary", "parent": "babar1", "children": [],
+      "settings": { "queryId": "baloop", "statsFormat": "Showing %start%–%end% of %total%", "noResultsText": "No articles found",
+        "_typography": { "color": { "hex": "#64748b" }, "font-size": "0.9375rem" }, "_margin": { "left": "auto" } } },
+    { "id": "bagrd1", "name": "div", "parent": "bacon1", "children": ["baloop"], "label": "Results Grid",
+      "settings": { "_display": "grid", "_gridTemplateColumns": "repeat(3, minmax(0, 1fr))", "_gridGap": "32px",
+        "_gridTemplateColumns:tablet_portrait": "repeat(2, minmax(0, 1fr))", "_gridTemplateColumns:mobile_portrait": "1fr" } },
+    { "id": "baloop", "name": "block", "parent": "bagrd1", "children": ["baimg1", "bamet1", "battl1", "baexc1"], "label": "Post Card (loop)",
+      "settings": {
+        "hasLoop": true,
+        "query": { "objectType": "post", "post_type": ["post"], "posts_per_page": "9", "orderby": "date", "order": "DESC" },
+        "_cssGlobalClasses": ["bacard"] } },
+    { "id": "baimg1", "name": "image", "parent": "baloop", "children": [],
+      "settings": { "image": { "useDynamicData": "{featured_image}", "size": "medium_large" }, "altText": "{post_title}",
+        "link": { "type": "meta", "useDynamicData": "{post_url}" },
+        "_aspectRatio": "3/2", "_objectFit": "cover", "_width": "100%",
+        "_border": { "radius": { "top": "12px", "right": "12px", "bottom": "12px", "left": "12px" } } } },
+    { "id": "bamet1", "name": "text-basic", "parent": "baloop", "children": [],
+      "settings": { "text": "{post_terms_category:plain} · {post_date:M j, Y}", "tag": "p",
+        "_typography": { "font-size": "0.8125rem", "font-weight": "500", "text-transform": "uppercase", "letter-spacing": "0.05em", "color": { "hex": "#2563eb" } } } },
+    { "id": "battl1", "name": "heading", "parent": "baloop", "children": [],
+      "settings": { "text": "{post_title}", "tag": "h3", "link": { "type": "meta", "useDynamicData": "{post_url}" },
+        "_typography": { "font-size": "1.25rem", "font-weight": "600", "line-height": "1.3" } } },
+    { "id": "baexc1", "name": "text-basic", "parent": "baloop", "children": [],
+      "settings": { "text": "{post_excerpt:22}", "tag": "p",
+        "_typography": { "color": { "hex": "#64748b" }, "line-height": "1.6", "font-size": "0.9375rem" } } },
+    { "id": "bapag1", "name": "pagination", "parent": "bacon1", "children": [],
+      "settings": { "queryId": "baloop", "ajax": true, "midSize": 2, "endSize": 1, "_justifyContent": "center" } }
+  ],
+  "source": "bricksCopiedElements",
+  "sourceUrl": "https://github.com/wpgaurav/bricks-skills",
+  "version": "2.3.6",
+  "globalClasses": [
+    { "id": "bacard", "name": "post-card",
+      "settings": {
+        "_rowGap": "12px",
+        "_cssTransition": "transform 0.25s ease",
+        "_transform:hover": { "translateY": "-4" }
+      } }
+  ],
+  "globalElements": []
+}
