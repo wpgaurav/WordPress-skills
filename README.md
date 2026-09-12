@@ -1,5 +1,7 @@
 # AI Agent Skills Collection
 
+[![Buy me a coffee](https://img.shields.io/badge/Buy%20me%20a%20coffee-FFDD00?style=flat&logo=buymeacoffee&logoColor=black)](https://buymeacoffee.com/gauravtiwari)
+
 A curated collection of 125+ reusable skills for AI coding agents — Claude Code, ChatGPT, Cursor, Windsurf, and other AI-powered development tools.
 
 These skills turn general-purpose AI assistants into specialized experts for WordPress development, UI/UX design, SEO, marketing, frontend engineering, and more.
@@ -226,6 +228,16 @@ If you maintain skills locally and want to sync them to this repo:
 # Verify no personal data leaked
 ./scripts/check-personal-data.sh
 ```
+
+## Support This Project
+
+This collection gives Claude Code, ChatGPT, Cursor and Windsurf 125+ open source skills for WordPress, design, SEO, marketing and frontend work. I keep adding and revising skills here and each one goes through a personal-data check before it's published.
+
+If running `/wp-block` or `/seo-audit` gave your agent the context it needed without you explaining the task from scratch, you can buy me a coffee.
+
+<a href="https://buymeacoffee.com/gauravtiwari"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy me a coffee" height="50"></a>
+
+An issue with the prompt you ran and the output that went wrong shows me where a skill misfired, and a star on the repo is welcome too.
 
 ## Author
 
