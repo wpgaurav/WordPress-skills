@@ -59,7 +59,8 @@ $elements = [
     ],
 ];
 
-update_post_meta( $popup_id, BRICKS_DB_PAGE_CONTENT, $elements );
+// update_post_meta() unslashes its value; wp_slash() keeps backslashes in settings such as custom CSS.
+update_post_meta( $popup_id, BRICKS_DB_PAGE_CONTENT, wp_slash( $elements ) );
 ```
 
 ## Popup Settings (Template Settings Panel)

@@ -233,12 +233,14 @@ Users create these from the editor:
 ### Programmatic Synced Pattern
 
 ```php
-$pattern_id = wp_insert_post( array(
+// wp_insert_post() unslashes its input. wp_slash() keeps escaped block JSON
+// such as var(\u002d\u002dwp\u002d\u002dpreset...) intact.
+$pattern_id = wp_insert_post( wp_slash( array(
     'post_type'    => 'wp_block',
     'post_title'   => 'Global CTA',
     'post_content' => '<!-- wp:group -->...',
     'post_status'  => 'publish',
-) );
+) ) );
 
 // Add to pattern category
 wp_set_object_terms( $pattern_id, 'my-category', 'wp_pattern_category' );

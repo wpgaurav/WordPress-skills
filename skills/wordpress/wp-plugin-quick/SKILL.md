@@ -798,13 +798,16 @@ class REST_API {
         $title   = $request->get_param( 'title' );
         $content = $request->get_param( 'content' );
 
-        // Create item (example)
+        // Create item (example). REST parameters arrive unslashed, but
+        // wp_insert_post() expects slashed data, so wp_slash() keeps backslashes.
         $item_id = wp_insert_post(
-            array(
-                'post_title'   => $title,
-                'post_content' => $content,
-                'post_status'  => 'publish',
-                'post_type'    => 'post',
+            wp_slash(
+                array(
+                    'post_title'   => $title,
+                    'post_content' => $content,
+                    'post_status'  => 'publish',
+                    'post_type'    => 'post',
+                )
             )
         );
 

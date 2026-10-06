@@ -61,7 +61,8 @@ function create_bricks_template( $title, $type, $elements = [] ) {
     }
 
     if ( ! empty( $elements ) ) {
-        update_post_meta( $template_id, $meta_key, $elements );
+        // update_post_meta() unslashes its value; wp_slash() keeps backslashes in element settings.
+        update_post_meta( $template_id, $meta_key, wp_slash( $elements ) );
     }
 
     return $template_id;
@@ -137,7 +138,7 @@ $template_settings = [
     ],
 ];
 
-update_post_meta( $template_id, BRICKS_DB_TEMPLATE_SETTINGS, $template_settings );
+update_post_meta( $template_id, BRICKS_DB_TEMPLATE_SETTINGS, wp_slash( $template_settings ) );
 ```
 
 ### Condition Types
