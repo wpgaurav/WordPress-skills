@@ -1,6 +1,7 @@
 ---
 name: wp-theme
 description: Quick scaffold for WordPress block theme development with theme.json, templates, and patterns.
+license: MIT
 ---
 
 # Skill: WordPress Theme Development

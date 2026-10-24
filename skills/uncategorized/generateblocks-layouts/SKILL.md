@@ -27,6 +27,7 @@ examples:
   - examples/compound/
   - examples/layouts/
   - examples/svg/
+license: MIT
 ---
 
 # GenerateBlocks V2 Layout Builder

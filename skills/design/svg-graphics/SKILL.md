@@ -1,6 +1,7 @@
 ---
 name: svg-graphics
 description: Create professional SVG graphics including data visualizations (pie charts, bar charts, line graphs, donut charts), flat illustrations (people, icons, objects, devices), dashboard mockups, marketing graphics, and infographics. Use when user requests charts, diagrams, illustrations, infographics, dashboards, marketing visuals, UI mockups, or any vector graphic. Outputs clean, scalable SVG code optimized for web use.
+license: MIT
 ---
 
 # SVG Graphics Creation

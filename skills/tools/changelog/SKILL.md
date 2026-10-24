@@ -1,6 +1,7 @@
 ---
 name: changelog
 description: "Generate structured changelogs from git history and commit messages"
+license: MIT
 ---
 
 # Changelog Generation

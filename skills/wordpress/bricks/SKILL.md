@@ -1,6 +1,7 @@
 ---
 name: bricks
 description: Author Bricks Builder (WordPress) layouts, templates, and full designs as paste-ready JSON. Use for any Bricks task — sections, pages, headers/footers, query loops, ACF/dynamic data, faceted filters, conditions, interactions/animations, popups, WooCommerce templates, custom elements, or hooks. Verified against Bricks 2.3.6 source.
+license: MIT
 ---
 
 # Bricks Builder JSON Authoring

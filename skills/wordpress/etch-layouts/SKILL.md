@@ -1,6 +1,7 @@
 ---
 name: etch-layouts
 description: Create responsive layouts using Etch page builder patterns and components.
+license: MIT
 ---
 
 # Etch Layouts Skill

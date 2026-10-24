@@ -2,8 +2,11 @@
 name: referral-program
 description: "When the user wants to create, optimize, or analyze a referral program, affiliate program, or word-of-mouth strategy. Also use when the user mentions 'referral,' 'affiliate,' 'ambassador,' 'word of mouth,' 'viral loop,' 'refer a friend,' 'partner program,' 'referral incentive,' 'how to get referrals,' 'customers referring customers,' or 'affiliate payout.' Use this whenever someone wants existing users or partners to bring in new customers. For launch-specific virality, see launch-strategy."
 metadata:
+  source: https://github.com/coreyhaines31/marketingskills
   version: 1.1.0
+license: MIT
 ---
+> From [marketingskills](https://github.com/coreyhaines31/marketingskills) by Corey Haines. Copyright (c) 2025 Corey Haines, used under the MIT License. See [NOTICE.md](../../../NOTICE.md) for changes.
 
 # Referral & Affiliate Programs
 

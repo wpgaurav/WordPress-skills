@@ -1,6 +1,7 @@
 ---
 name: wp-block-quick
 description: Build custom Gutenberg blocks using the WordPress Block API and @wordpress/scripts.
+license: MIT
 ---
 
 # Skill: WordPress Block Development

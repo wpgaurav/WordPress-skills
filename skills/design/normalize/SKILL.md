@@ -6,7 +6,11 @@ args:
   - name: feature
     description: The page, route, or feature to normalize (optional)
     required: false
+license: Apache-2.0
+metadata:
+  source: https://github.com/pbakaus/impeccable
 ---
+> Adapted from [impeccable](https://github.com/pbakaus/impeccable) by Paul Bakaus, used under the Apache License 2.0. Modified for this collection; see [NOTICE.md](../../../NOTICE.md) for what changed.
 
 Analyze and redesign the feature to perfectly match our design system standards, aesthetics, and established patterns.
 

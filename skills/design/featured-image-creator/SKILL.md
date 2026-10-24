@@ -1,6 +1,7 @@
 ---
 name: featured-image-creator
 description: Create blog featured images as SVG (2400x1260px) using illustration libraries, FontAwesome icons, and open-source SVGs. No or negligible text. Convert to PNG via rsvg-convert. Use for yoursite.com and youragency.com blog post thumbnails, social sharing images, and WordPress featured images.
+license: MIT
 ---
 
 # Featured Image Creator

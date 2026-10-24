@@ -1,7 +1,11 @@
 ---
 name: wordpress-router
 description: "Use when the user asks about WordPress codebases (plugins, themes, block themes, Gutenberg blocks, WP core checkouts) and you need to quickly classify the repo and route to the correct workflow/skill (blocks, theme.json, REST API, WP-CLI, performance, security, testing, release packaging)."
+license: GPL-2.0-or-later
+metadata:
+  source: https://github.com/WordPress/agent-skills
 ---
+> From [Agent Skills for WordPress](https://github.com/WordPress/agent-skills). Copyright (C) 2026 WordPress Contributors, licensed under GPL-2.0-or-later. Changed from upstream: the `compatibility:` frontmatter line was dropped when this copy was made in March 2026, and license frontmatter plus this notice were added on 2026-10-24. See [NOTICE.md](../../../NOTICE.md).
 
 # WordPress Router
 

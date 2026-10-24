@@ -4,9 +4,11 @@ description: Token architecture, component specifications, and slide generation.
 argument-hint: "[component or token]"
 license: MIT
 metadata:
+  source: https://github.com/nextlevelbuilder/ui-ux-pro-max-skill
   author: claudekit
   version: "1.0.0"
 ---
+> From [UI UX Pro Max](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) by Next Level Builder (ClaudeKit). Copyright (c) 2024 Next Level Builder, used under the MIT License. See [NOTICE.md](../../../NOTICE.md).
 
 # Design System
 

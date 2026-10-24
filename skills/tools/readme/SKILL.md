@@ -1,6 +1,7 @@
 ---
 name: readme
 description: "Generate comprehensive README files for projects and repositories"
+license: MIT
 ---
 
 # README Generation

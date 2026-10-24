@@ -1,6 +1,7 @@
 ---
 name: tts
 description: "Convert text to speech using ElevenLabs with emotional audio tags, pronunciation control, and blog-to-audio workflows"
+license: MIT
 ---
 
 # ElevenLabs Text-to-Speech Skill

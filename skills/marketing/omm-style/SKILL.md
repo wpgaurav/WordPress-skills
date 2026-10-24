@@ -1,6 +1,7 @@
 ---
 name: omm-style
 description: Write WordPress performance, hosting, plugin, and SEO articles using OnlineMediaMasters methodology blended with Gaurav Tiwari's voice DNA. Data-driven, opinionated, setting-by-setting tutorials with real benchmarks.
+license: MIT
 ---
 
 # OMM-Style Writing Skill

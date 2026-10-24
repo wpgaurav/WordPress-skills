@@ -1,6 +1,7 @@
 ---
 name: md-section
 description: "Use when converting HTML layouts to MD Section block + core block combinations for the WordPress Block Editor. Triggers: HTML-to-blocks, section layout, convert HTML to Gutenberg, pasting HTML into block editor."
+license: MIT
 ---
 
 # HTML to MD Section Block Conversion

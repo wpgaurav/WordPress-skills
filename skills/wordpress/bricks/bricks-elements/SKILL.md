@@ -1,6 +1,7 @@
 ---
 name: bricks-elements
 description: Create custom elements for Bricks Builder extending the Element class.
+license: MIT
 ---
 
 # Bricks Elements Skill

@@ -2,8 +2,11 @@
 name: marketing-ideas
 description: "When the user needs marketing ideas, inspiration, or strategies for their SaaS or software product. Also use when the user asks for 'marketing ideas,' 'growth ideas,' 'how to market,' 'marketing strategies,' 'marketing tactics,' 'ways to promote,' 'ideas to grow,' 'what else can I try,' 'I don't know how to market this,' 'brainstorm marketing,' or 'what marketing should I do.' Use this as a starting point whenever someone is stuck or looking for inspiration on how to grow. For specific channel execution, see the relevant skill (paid-ads, social-content, email-sequence, etc.)."
 metadata:
+  source: https://github.com/coreyhaines31/marketingskills
   version: 1.1.0
+license: MIT
 ---
+> From [marketingskills](https://github.com/coreyhaines31/marketingskills) by Corey Haines. Copyright (c) 2025 Corey Haines, used under the MIT License. See [NOTICE.md](../../../NOTICE.md) for changes.
 
 # Marketing Ideas for SaaS
 

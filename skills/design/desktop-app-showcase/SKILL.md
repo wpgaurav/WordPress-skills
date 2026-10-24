@@ -1,6 +1,7 @@
 ---
 name: desktop-app-showcase
 description: Create desktop application showcase graphics in SVG featuring macOS-style window chrome, sidebars, multi-panel layouts, chat interfaces, and code diffs. Use for developer tools, AI assistants, IDE plugins, productivity apps, and desktop software marketing. Output polished app mockups with gradient backgrounds.
+license: MIT
 ---
 
 # Desktop App Showcase Graphics

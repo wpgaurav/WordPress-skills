@@ -6,7 +6,11 @@ args:
   - name: target
     description: The feature or component to colorize (optional)
     required: false
+license: Apache-2.0
+metadata:
+  source: https://github.com/pbakaus/impeccable
 ---
+> Adapted from [impeccable](https://github.com/pbakaus/impeccable) by Paul Bakaus, used under the Apache License 2.0. Modified for this collection; see [NOTICE.md](../../../NOTICE.md) for what changed.
 
 Strategically introduce color to designs that are too monochromatic, gray, or lacking in visual warmth and personality.
 

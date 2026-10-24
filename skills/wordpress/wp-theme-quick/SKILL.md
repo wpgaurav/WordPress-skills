@@ -1,6 +1,7 @@
 ---
 name: wp-theme-quick
 description: Build modern WordPress block themes following Full Site Editing (FSE) best practices.
+license: MIT
 ---
 
 # Skill: WordPress Theme Development

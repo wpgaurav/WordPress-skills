@@ -3,6 +3,7 @@ name: product-box-converter
 description: Convert clipboard content to ACF Product Box blocks. Use when the user pastes AAWP HTML, a product URL, or raw product details and wants an ACF product-box block. Also use when the user mentions "product box," "convert to product box," "AAWP to ACF," or "product block."
 user_invocable: true
 argument: The clipboard content (AAWP HTML, product URL, or product details) to convert
+license: MIT
 ---
 
 # ACF Product Box Converter

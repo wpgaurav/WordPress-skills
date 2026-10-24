@@ -16,13 +16,15 @@ scripts/          — Maintenance and sync utilities
 - **No hardcoded domains.** Use `example.com` or `yoursite.com` as placeholders. If a SKILL.md references a specific personal domain, replace it before committing.
 - **No credentials.** No API keys, tokens, passwords, emails, phone numbers, or revenue figures.
 - **Skill-only commits.** Each skill directory should contain only `SKILL.md` and any non-personal supporting files (templates, examples with placeholder data).
+- **Provenance before publishing.** Before adding a skill, check whether it came from another project. Third-party skills keep their upstream license, name the upstream in `metadata.source`, open with a one-line attribution note, and get an entry in `NOTICE.md`. Never add a skill whose upstream has no license, a non-commercial license, or a paid license. `scripts/check-licenses.sh` enforces this and holds the never-publish list.
 
 ## Adding Skills
 
-1. Copy the skill directory into the appropriate category folder under `skills/`.
-2. Remove or exclude the `references/` subdirectory entirely.
-3. Review `SKILL.md` for hardcoded personal references and replace them.
-4. Run `scripts/check-personal-data.sh` before committing.
+1. Confirm who wrote the skill. If it came from elsewhere, find the upstream repository and its license first.
+2. Copy the skill directory into the appropriate category folder under `skills/` (or run `scripts/sync-skills.sh --add <name>` for a skill you wrote).
+3. Remove or exclude the `references/` subdirectory entirely.
+4. Review `SKILL.md` for hardcoded personal references and replace them.
+5. Run `scripts/check-licenses.sh` and `scripts/check-personal-data.sh` before committing.
 
 ## Skill File Format
 
@@ -30,7 +32,9 @@ Each skill lives in its own directory with a `SKILL.md` file that follows this s
 
 ```markdown
 ---
+name: skill-name
 description: One-line description of what the skill does
+license: MIT
 ---
 
 # Skill Name

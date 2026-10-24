@@ -1,7 +1,11 @@
 ---
 name: wp-playground
 description: "Use for WordPress Playground workflows: fast disposable WP instances in the browser or locally via @wp-playground/cli (server, run-blueprint, build-snapshot), auto-mounting plugins/themes, switching WP/PHP versions, blueprints, and debugging (Xdebug)."
+license: GPL-2.0-or-later
+metadata:
+  source: https://github.com/WordPress/agent-skills
 ---
+> From [Agent Skills for WordPress](https://github.com/WordPress/agent-skills). Copyright (C) 2026 WordPress Contributors, licensed under GPL-2.0-or-later. Changed from upstream: the `compatibility:` frontmatter line was dropped when this copy was made in March 2026, and license frontmatter plus this notice were added on 2026-10-24. See [NOTICE.md](../../../NOTICE.md).
 
 # WordPress Playground
 

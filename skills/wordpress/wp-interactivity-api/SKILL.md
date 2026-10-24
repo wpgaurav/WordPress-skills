@@ -1,7 +1,11 @@
 ---
 name: wp-interactivity-api
 description: "Use when building or debugging WordPress Interactivity API features (data-wp-* directives, @wordpress/interactivity store/state/actions, block viewScriptModule integration, wp_interactivity_*()) including performance, hydration, and directive behavior."
+license: GPL-2.0-or-later
+metadata:
+  source: https://github.com/WordPress/agent-skills
 ---
+> From [Agent Skills for WordPress](https://github.com/WordPress/agent-skills). Copyright (C) 2026 WordPress Contributors, licensed under GPL-2.0-or-later. Changed from upstream: the `compatibility:` frontmatter line was dropped when this copy was made in March 2026, and license frontmatter plus this notice were added on 2026-10-24. See [NOTICE.md](../../../NOTICE.md).
 
 # WP Interactivity API
 

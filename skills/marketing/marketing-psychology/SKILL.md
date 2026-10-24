@@ -2,8 +2,11 @@
 name: marketing-psychology
 description: "When the user wants to apply psychological principles, mental models, or behavioral science to marketing. Also use when the user mentions 'psychology,' 'mental models,' 'cognitive bias,' 'persuasion,' 'behavioral science,' 'why people buy,' 'decision-making,' 'consumer behavior,' 'anchoring,' 'social proof,' 'scarcity,' 'loss aversion,' 'framing,' or 'nudge.' Use this whenever someone wants to understand or leverage how people think and make decisions in a marketing context."
 metadata:
+  source: https://github.com/coreyhaines31/marketingskills
   version: 1.1.0
+license: MIT
 ---
+> From [marketingskills](https://github.com/coreyhaines31/marketingskills) by Corey Haines. Copyright (c) 2025 Corey Haines, used under the MIT License. See [NOTICE.md](../../../NOTICE.md) for changes.
 
 # Marketing Psychology & Mental Models
 

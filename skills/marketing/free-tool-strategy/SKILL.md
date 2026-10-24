@@ -2,8 +2,11 @@
 name: free-tool-strategy
 description: When the user wants to plan, evaluate, or build a free tool for marketing purposes — lead generation, SEO value, or brand awareness. Also use when the user mentions "engineering as marketing," "free tool," "marketing tool," "calculator," "generator," "interactive tool," "lead gen tool," "build a tool for leads," "free resource," "ROI calculator," "grader tool," "audit tool," "should I build a free tool," or "tools for lead gen." Use this whenever someone wants to build something useful and give it away to attract leads or earn links. For content-based lead generation, see content-strategy.
 metadata:
+  source: https://github.com/coreyhaines31/marketingskills
   version: 1.1.0
+license: MIT
 ---
+> From [marketingskills](https://github.com/coreyhaines31/marketingskills) by Corey Haines. Copyright (c) 2025 Corey Haines, used under the MIT License. See [NOTICE.md](../../../NOTICE.md) for changes.
 
 # Free Tool Strategy (Engineering as Marketing)
 

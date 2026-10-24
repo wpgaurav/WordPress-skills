@@ -1,7 +1,11 @@
 ---
 name: ui-skills
 description: Opinionated constraints for building better interfaces with agents.
+license: MIT
+metadata:
+  source: https://github.com/ibelick/ui-skills
 ---
+> From [ui-skills](https://github.com/ibelick/ui-skills) by Julien Thibeaut (ibelick). Copyright (c) 2026 Julien Thibeaut, used under the MIT License. See [NOTICE.md](../../../NOTICE.md).
 
 # UI Skills
 

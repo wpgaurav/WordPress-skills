@@ -1,6 +1,7 @@
 ---
 name: fluent-community
 description: "Use when pushing content, docs, posts, changelogs, or other updates to Fluent Community spaces through the Fluent Community REST API."
+license: MIT
 ---
 
 # Fluent Community REST API

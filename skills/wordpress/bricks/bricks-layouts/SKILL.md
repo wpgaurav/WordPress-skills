@@ -1,6 +1,7 @@
 ---
 name: bricks-layouts
 description: Create ready-to-paste sections and importable templates for Bricks Builder.
+license: MIT
 ---
 
 # Bricks Builder Layouts Skill

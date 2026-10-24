@@ -2,8 +2,11 @@
 name: ab-test-setup
 description: When the user wants to plan, design, or implement an A/B test or experiment. Also use when the user mentions "A/B test," "split test," "experiment," "test this change," "variant copy," "multivariate test," "hypothesis," "should I test this," "which version is better," "test two versions," "statistical significance," or "how long should I run this test." Use this whenever someone is comparing two approaches and wants to measure which performs better. For tracking implementation, see analytics-tracking. For page-level conversion optimization, see page-cro.
 metadata:
+  source: https://github.com/coreyhaines31/marketingskills
   version: 1.1.0
+license: MIT
 ---
+> From [marketingskills](https://github.com/coreyhaines31/marketingskills) by Corey Haines. Copyright (c) 2025 Corey Haines, used under the MIT License. See [NOTICE.md](../../../NOTICE.md) for changes.
 
 # A/B Test Setup
 

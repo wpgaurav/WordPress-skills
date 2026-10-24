@@ -4,9 +4,11 @@ description: "Design banners for social media, ads, website heroes, creative ass
 argument-hint: "[platform] [style] [dimensions]"
 license: MIT
 metadata:
+  source: https://github.com/nextlevelbuilder/ui-ux-pro-max-skill
   author: claudekit
   version: "1.0.0"
 ---
+> From [UI UX Pro Max](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) by Next Level Builder (ClaudeKit). Copyright (c) 2024 Next Level Builder, used under the MIT License. See [NOTICE.md](../../../NOTICE.md).
 
 # Banner Design - Multi-Format Creative Banner System
 
