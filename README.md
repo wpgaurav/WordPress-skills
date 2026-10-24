@@ -140,7 +140,7 @@ I wrote 42 of the 120 skills. The rest come from other open-source projects and 
 | `popup-cro` | Create and optimize popups and modals | marketingskills (MIT) |
 | `paywall-upgrade-cro` | In-app paywalls and upgrade screens | marketingskills (MIT) |
 | `ab-test-setup` | Plan and implement A/B tests | marketingskills (MIT) |
-| `stop-slop` | Remove AI writing patterns from prose | Hardik Pandya, edited (MIT) |
+| `stop-slop` | Remove AI writing patterns without flattening the writer's voice | Hardik Pandya, extended by Gaurav Tiwari (MIT) |
 | `clarify` | Improve unclear UX copy and microcopy | impeccable (Apache-2.0) |
 | `slides` | Strategic HTML presentations with Chart.js | UI UX Pro Max (MIT) |
 | `brand` | Brand voice, visual identity, and messaging frameworks | UI UX Pro Max (MIT) |
