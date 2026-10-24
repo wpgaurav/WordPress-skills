@@ -1,8 +1,11 @@
 ---
 name: ui-design-brain
 description: Generate production-grade UI using real component patterns and best practices from 60+ documented interface components. Use when the user asks to build web interfaces, pages, dashboards, forms, navigation, or any UI — ensures modern, minimal, SaaS-quality output grounded in design system conventions rather than generic AI patterns.
-license: Complete terms in LICENSE.txt
+license: MIT
+metadata:
+  source: https://github.com/carmahhawwari/ui-design-brain
 ---
+> From [UI Design Brain](https://github.com/carmahhawwari/ui-design-brain) by carmahhawwari. Copyright (c) 2026 UI Design Brain Contributors, used under the MIT License. See [NOTICE.md](../../../NOTICE.md).
 
 # UI Design Brain
 

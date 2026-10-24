@@ -22,7 +22,11 @@ tags:
   - nextjs
   - react
   - saas
+license: MIT
+metadata:
+  source: https://github.com/deveshpunjabi/modern-frontend-skill
 ---
+> From [modern-frontend-skill](https://github.com/deveshpunjabi/modern-frontend-skill) by Devesh Punjabi. Copyright (c) 2026 Devesh Punjabi, used under the MIT License. See [NOTICE.md](../../../NOTICE.md).
 
 # Modern Frontend Design
 

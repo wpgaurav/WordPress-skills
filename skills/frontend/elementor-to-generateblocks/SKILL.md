@@ -16,6 +16,7 @@ tags:
   - elementor
   - conversion
   - migration
+license: MIT
 ---
 
 # Elementor to GenerateBlocks Converter

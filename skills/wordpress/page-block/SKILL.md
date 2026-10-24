@@ -1,6 +1,7 @@
 ---
 name: page-block
 description: Build and push section-based pages using the Marketers Delight Page Block (`marketers-delight/page-block`) Gutenberg block with HTML, CSS, and optional JS in block attributes. Use when creating or updating WordPress pages that use Page Blocks and when generating or pushing Page Block content through the REST API.
+license: MIT
 ---
 
 # Page Block Skill

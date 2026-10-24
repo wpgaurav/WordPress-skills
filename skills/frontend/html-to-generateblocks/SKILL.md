@@ -14,6 +14,7 @@ tags:
   - generateblocks
   - conversion
   - html
+license: MIT
 ---
 
 # HTML to GenerateBlocks V2 Conversion

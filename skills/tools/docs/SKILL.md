@@ -1,6 +1,7 @@
 ---
 name: docs
 description: "Generate and maintain technical documentation for codebases"
+license: MIT
 ---
 
 # Documentation Generation

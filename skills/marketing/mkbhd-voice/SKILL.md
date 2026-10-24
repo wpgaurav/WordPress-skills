@@ -1,3 +1,9 @@
+---
+name: mkbhd-voice
+description: Conversational video-script voice in the style of a tech YouTuber explaining to a smart friend. Use when the user asks for mkbhd style, conversation style, video script style, or youtube voice.
+license: MIT
+---
+
 # MKBHD Voice DNA Skill
 
 ## Trigger Phrases

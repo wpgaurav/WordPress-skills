@@ -2,6 +2,7 @@
 name: wp-block-markup
 description: "WordPress block markup syntax and HTML structure. Understand block delimiters, attributes, nesting, and how blocks serialize to the database. Based on Gutenberg source code."
 compatibility: "WordPress 6.1+. List-item blocks required since 6.1. Verified against Gutenberg trunk April 2026."
+license: MIT
 ---
 
 # WordPress Block Markup Syntax

@@ -2,6 +2,7 @@
 name: wp-core-blocks
 description: "Complete reference for WordPress core blocks: all 113+ blocks with their attributes, supports, categories, and markup examples. Use when building layouts with core Gutenberg blocks."
 compatibility: "WordPress 6.8+ (113 blocks). WordPress 6.9+ adds Accordion block."
+license: MIT
 ---
 
 # WordPress Core Blocks Reference

@@ -1,6 +1,7 @@
 ---
 name: cinematic-editorial-graphics
 description: Create cinematic editorial hero images with photorealistic subjects, dramatic typography, and magazine-quality composition. Use for blog hero images, announcement graphics, feature stories, newsletter headers, and social media covers. Optimized prompts for Gemini and ChatGPT/DALL-E image generation.
+license: MIT
 ---
 
 # Cinematic Editorial Graphics

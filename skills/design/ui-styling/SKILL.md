@@ -4,9 +4,11 @@ description: Create beautiful, accessible user interfaces with shadcn/ui compone
 argument-hint: "[component or layout]"
 license: MIT
 metadata:
+  source: https://github.com/nextlevelbuilder/ui-ux-pro-max-skill
   author: claudekit
   version: "1.0.0"
 ---
+> From [UI UX Pro Max](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) by Next Level Builder (ClaudeKit). Copyright (c) 2024 Next Level Builder, used under the MIT License. See [NOTICE.md](../../../NOTICE.md).
 
 # UI Styling Skill
 

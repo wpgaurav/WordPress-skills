@@ -1,6 +1,7 @@
 ---
 name: hand-drawn-explainers
 description: Create hand-drawn explainer graphics in SVG that look like notebook sketches with blue and red ink on ruled paper. Use for product launches, technical explainers, dev tools, AI workflows, SaaS landing pages, educational diagrams, pitch decks, and social media. Output intentionally imperfect, human-feeling sketches that prioritize clarity over polish.
+license: MIT
 ---
 
 # Hand-Drawn Explainer Graphics

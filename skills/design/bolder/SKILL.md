@@ -6,7 +6,11 @@ args:
   - name: target
     description: The feature or component to make bolder (optional)
     required: false
+license: Apache-2.0
+metadata:
+  source: https://github.com/pbakaus/impeccable
 ---
+> Adapted from [impeccable](https://github.com/pbakaus/impeccable) by Paul Bakaus, used under the Apache License 2.0. Modified for this collection; see [NOTICE.md](../../../NOTICE.md) for what changed.
 
 Increase visual impact and personality in designs that are too safe, generic, or visually underwhelming, creating more engaging and memorable experiences.
 

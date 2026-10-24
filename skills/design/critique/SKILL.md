@@ -6,7 +6,11 @@ args:
   - name: area
     description: The feature or area to critique (optional)
     required: false
+license: Apache-2.0
+metadata:
+  source: https://github.com/pbakaus/impeccable
 ---
+> Adapted from [impeccable](https://github.com/pbakaus/impeccable) by Paul Bakaus, used under the Apache License 2.0. Modified for this collection; see [NOTICE.md](../../../NOTICE.md) for what changed.
 
 Conduct a holistic design critique, evaluating whether the interface actually works—not just technically, but as a designed experience. Think like a design director giving feedback.
 

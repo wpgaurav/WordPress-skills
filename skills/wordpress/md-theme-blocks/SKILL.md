@@ -1,6 +1,7 @@
 ---
 name: md-theme-blocks
 description: Marketers Delight (MD) theme Gutenberg blocks. 26 block references with attributes, examples, and rendering details.
+license: MIT
 ---
 
 # Marketers Delight Theme Blocks

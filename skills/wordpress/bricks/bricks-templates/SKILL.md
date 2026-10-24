@@ -1,6 +1,7 @@
 ---
 name: bricks-templates
 description: Create and work with Bricks templates programmatically.
+license: MIT
 ---
 
 # Bricks Templates Skill

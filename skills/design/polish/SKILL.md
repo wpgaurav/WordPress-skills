@@ -6,7 +6,11 @@ args:
   - name: target
     description: The feature or area to polish (optional)
     required: false
+license: Apache-2.0
+metadata:
+  source: https://github.com/pbakaus/impeccable
 ---
+> Adapted from [impeccable](https://github.com/pbakaus/impeccable) by Paul Bakaus, used under the Apache License 2.0. Modified for this collection; see [NOTICE.md](../../../NOTICE.md) for what changed.
 
 **First**: Use the frontend-design skill for design principles and anti-patterns.
 

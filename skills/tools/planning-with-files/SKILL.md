@@ -1,7 +1,11 @@
 ---
 name: planning-with-files
 description: Transforms workflow to use Manus-style persistent markdown files for planning, progress tracking, and knowledge storage. Use when starting complex tasks, multi-step projects, research tasks, or when the user mentions planning, organizing work, tracking progress, or wants structured output.
+license: MIT
+metadata:
+  source: https://github.com/OthmanAdi/planning-with-files
 ---
+> From [planning-with-files](https://github.com/OthmanAdi/planning-with-files) by Ahmad Adi. Copyright (c) 2026 Ahmad Adi, used under the MIT License. See [NOTICE.md](../../../NOTICE.md).
 
 # Planning with Files
 

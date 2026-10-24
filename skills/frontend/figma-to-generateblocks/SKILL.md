@@ -18,6 +18,7 @@ tags:
   - figma
   - conversion
   - design
+license: MIT
 ---
 
 # Figma to GenerateBlocks Converter

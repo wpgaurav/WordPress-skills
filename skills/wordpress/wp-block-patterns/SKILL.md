@@ -2,6 +2,7 @@
 name: wp-block-patterns
 description: "Create, register, and organize WordPress block patterns. File-based patterns, PHP registration, categories, and synced patterns."
 compatibility: "WordPress 6.0+ for file-based patterns. WordPress 6.3+ for pattern overrides."
+license: MIT
 ---
 
 # WordPress Block Patterns

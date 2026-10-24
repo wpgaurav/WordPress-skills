@@ -1,7 +1,11 @@
 ---
 name: greenlight-vibe
 description: Generate or edit design for WordPress Gutenberg blocks using Greenshift/GreenLight plugin. Convert any data to wordpress blocks or convert greenshift blocks back to html + css + js. Use when user asks to create design with Greenshift or Greenlight blocks for wordpress site, convert anything to wordpress blocks or build charts in content. Triggers on keywords: wordpress, gutenberg, greenshift, greenlight, convert to wordpress, convert greenshift blocks to vanilla html, build chart.
+license: GPL-2.0-or-later
+metadata:
+  source: https://github.com/wpsoul/greenlight-vibe
 ---
+> From [GreenLight Vibe](https://github.com/wpsoul/greenlight-vibe) by Wpsoul, as shipped under GPL-2.0-or-later in the [Greenshift](https://wordpress.org/plugins/greenshift-animation-and-page-builder-blocks/) plugin. Changed on 2026-10-24: added license frontmatter and this notice. See [NOTICE.md](../../../NOTICE.md).
 
 # Greenshift/Greenlight Block Generator and Data Convertor to WordPress blocks
 

@@ -1,6 +1,7 @@
 ---
 name: monoline-icons
 description: Create Apple-style monoline icon illustrations in SVG. Single-color outline icons with uniform stroke weight, rounded caps/joins, and clean geometry. Use for tech product marketing, feature showcases, device ecosystems, service overviews, blog graphics, and documentation illustrations. Output crisp, professional iconography that looks like Apple developer documentation or WWDC slide art.
+license: MIT
 ---
 
 # Monoline Icon Illustrations

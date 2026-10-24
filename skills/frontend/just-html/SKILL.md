@@ -2,6 +2,7 @@
 name: just-html
 description: Build self-contained, drop-in HTML components (hero, pricing, features, testimonials, footer, etc.) that work inside any existing page without conflicts. Outputs a single code block with scoped CSS, semantic HTML, and minimal JS.
 user_invocable: true
+license: MIT
 ---
 
 # Self-Contained HTML Component Builder

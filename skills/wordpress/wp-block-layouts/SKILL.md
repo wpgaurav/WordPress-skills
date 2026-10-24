@@ -2,6 +2,7 @@
 name: wp-block-layouts
 description: "Ready-to-use WordPress Block Editor layout patterns: hero sections, pricing tables, testimonials, feature grids, CTAs, and more. All patterns use core blocks only."
 compatibility: "WordPress 6.6+. Uses theme.json v3 style attributes."
+license: MIT
 ---
 
 # WordPress Block Layout Patterns

@@ -1,6 +1,7 @@
 ---
 name: wp-block
 description: Quick scaffold for Gutenberg block development with block.json, PHP registration, and React components.
+license: MIT
 ---
 
 # Skill: WordPress Block Development

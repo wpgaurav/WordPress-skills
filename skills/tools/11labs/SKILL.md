@@ -3,6 +3,7 @@ name: 11labs
 description: "Convert articles, blog posts, or any text to ElevenLabs V3 audio scripts with emotional tags, pacing, and natural delivery. Use when the user wants to create audio content, podcast scripts, TTS scripts, or convert written content to spoken format. Also triggers on: 'audio script', 'ElevenLabs', 'TTS', 'text to speech', 'narration script', 'podcast script', 'blog to audio'."
 metadata:
   version: 1.0.0
+license: MIT
 ---
 
 # ElevenLabs V3 Audio Script Creator

@@ -1,6 +1,7 @@
 ---
 name: bricks-hooks
 description: Use filters and actions available in Bricks Builder for customization.
+license: MIT
 ---
 
 # Bricks Hooks Skill

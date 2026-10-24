@@ -2,6 +2,7 @@
 name: wp-block-styles
 description: "Style WordPress blocks with theme.json: presets, block-level styles, style variations, and custom CSS. Configure typography, colors, spacing, and layouts."
 compatibility: "WordPress 6.6+ for theme.json v3. Some features require earlier versions."
+license: MIT
 ---
 
 # WordPress Block Styles & theme.json

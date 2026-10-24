@@ -1,6 +1,7 @@
 ---
 name: wp-plugin-quick
 description: Build production-ready WordPress plugins following best practices and WordPress coding standards.
+license: MIT
 ---
 
 # Skill: WordPress Plugin Development

@@ -1,6 +1,7 @@
 ---
 name: wp-plugin
 description: Quick scaffold for WordPress plugin development with proper structure, hooks, and best practices.
+license: MIT
 ---
 
 # Skill: WordPress Plugin Development

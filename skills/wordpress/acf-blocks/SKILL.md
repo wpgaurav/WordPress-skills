@@ -1,6 +1,7 @@
 ---
 name: acf-blocks
 description: ACF custom Gutenberg blocks. 29 block types with field specs, examples, and markup patterns.
+license: MIT
 ---
 
 # ACF Blocks

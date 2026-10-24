@@ -1,6 +1,7 @@
 ---
 name: ai-rank
 description: Optimize content for LLM discoverability AND AI agent consumption. Use when user runs `/ai-rank`, asks to "optimize for AI", "optimize for LLMs", "optimize for agents", "make content AI-readable", or needs to write/proofread landing pages, docs, blog posts for answer engines and autonomous AI agents.
+license: MIT
 ---
 
 # AI Rank Optimizer (LLM + AGENT Frameworks)

@@ -1,7 +1,11 @@
 ---
 name: stop-slop
 description: Remove AI writing patterns from prose. Use when drafting, editing, or reviewing text to eliminate predictable AI tells.
+license: MIT
+metadata:
+  source: https://github.com/hardikpandya/stop-slop
 ---
+> Based on [stop-slop](https://github.com/hardikpandya/stop-slop) by Hardik Pandya. Copyright (c) 2025 Hardik Pandya, used under the MIT License. Gaurav Tiwari added four checklist items and the Self-Audit section; see [NOTICE.md](../../../NOTICE.md).
 
 # Stop Slop
 

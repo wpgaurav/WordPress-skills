@@ -2,6 +2,7 @@
 name: product-box-block
 description: Convert a URL (from clipboard or user input) to an ACF Product Box Block. Fetches the page, extracts product details, and outputs WordPress block markup. Use when the user pastes a product URL, mentions "product box," "ACF product box," or wants to convert a product page to a Gutenberg block.
 user_invocable: true
+license: MIT
 ---
 
 # ACF Product Box Block Generator

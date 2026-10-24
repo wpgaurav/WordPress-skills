@@ -3,9 +3,12 @@ name: ckm:brand
 description: Brand voice, visual identity, messaging frameworks, asset management, brand consistency. Activate for branded content, tone of voice, marketing assets, brand compliance, style guides.
 argument-hint: "[update|review|create] [args]"
 metadata:
+  source: https://github.com/nextlevelbuilder/ui-ux-pro-max-skill
   author: claudekit
   version: "1.0.0"
+license: MIT
 ---
+> From [UI UX Pro Max](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) by Next Level Builder (ClaudeKit). Copyright (c) 2024 Next Level Builder, used under the MIT License. See [NOTICE.md](../../../NOTICE.md).
 
 # Brand
 

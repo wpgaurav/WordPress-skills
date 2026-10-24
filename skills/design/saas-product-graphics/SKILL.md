@@ -1,6 +1,7 @@
 ---
 name: saas-product-graphics
 description: Create polished SaaS product UI showcase graphics in SVG. Floating panels, soft shadows, modern gradients, clean typography. Use for landing pages, feature showcases, product marketing, app store screenshots, and hero sections. Output professional, modern visuals that look like Figma/Sketch exports.
+license: MIT
 ---
 
 # SaaS Product Graphics
