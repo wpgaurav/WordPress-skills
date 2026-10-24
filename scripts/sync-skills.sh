@@ -10,7 +10,8 @@
 #    never overwritten; update those by hand from their upstream.
 # 2. Adds a new skill only when named with --add, and never a blocked one.
 # 3. Keeps the `license:` frontmatter line, adding `license: MIT` if missing.
-# 4. Skips all references/ subdirectories and warns about personal domains.
+# 4. Strips <!-- local-only --> blocks, skips local-* files and references/
+#    subdirectories, and warns about personal domains.
 
 set -euo pipefail
 
@@ -75,14 +76,23 @@ ensure_license() {
     fi
 }
 
+# Removes everything between <!-- local-only:start --> and <!-- local-only:end -->.
+strip_local_only() {
+    local file="$1"
+    awk '/<!-- local-only:start -->/ { skip = 1; next } /<!-- local-only:end -->/ { skip = 0; next } !skip' "$file" > "$file.tmp"
+    mv "$file.tmp" "$file"
+}
+
 copy_skill() {
     local skill_dir="$1" target_dir="$2"
     mkdir -p "$target_dir"
     cp "$skill_dir/SKILL.md" "$target_dir/SKILL.md"
+    strip_local_only "$target_dir/SKILL.md"
     ensure_license "$target_dir/SKILL.md"
     for f in "$skill_dir"/*.md; do
         [ -f "$f" ] || continue
         fname=$(basename "$f")
+        case "$fname" in local-*) continue ;; esac
         if [ "$fname" != "SKILL.md" ] && [ "$fname" != "llm.md" ] && \
            [ "$fname" != "about-me.md" ] && [ "$fname" != "business-profile.md" ] && \
            [ "$fname" != "voice-dna.md" ] && [ "$fname" != "affiliate-products.md" ]; then

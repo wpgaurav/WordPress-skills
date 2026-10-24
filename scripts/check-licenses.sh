@@ -37,6 +37,12 @@ if grep -rqiE 'ui\.sh([^a-z0-9]|$)|uidotsh' skills/ 2>/dev/null; then
     fail "skills mention a paid skill source: $(grep -rliE 'ui\.sh([^a-z0-9]|$)|uidotsh' skills/ | tr '\n' ' ')"
 fi
 
+local_files=$(find skills -name 'local-*' 2>/dev/null || true)
+[ -z "$local_files" ] || fail "local-only files present: $(echo "$local_files" | tr '\n' ' ')"
+
+private=$(grep -rlE 'local-only:(start|end)|/Users/[a-z]|Mobile Documents|claude-sync' skills/ 2>/dev/null || true)
+[ -z "$private" ] || fail "private markers or paths in: $(echo "$private" | tr '\n' ' ')"
+
 while IFS= read -r file; do
     if [ "$(head -1 "$file")" != "---" ]; then
         fail "$file has no frontmatter"
